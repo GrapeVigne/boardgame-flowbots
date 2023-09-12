@@ -3,23 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles_map.css">
+  <link rel="stylesheet" href="map.css">
   <title>Choose a Map Space</title>
 </head>
 
 <body>
   <header class="header">
-    <img src="/images/header_mini.jpg" alt="Colonial Twilight - The French-Algerian War, 1954-1962">
+    <img src="images/header_mini.jpg" alt="Colonial Twilight - The French-Algerian War, 1954-1962">
     <nav class="main-nav">
       <div class="main-nav_phase">
         <button class="button">New FLN Turn</button>
         <button class="button">Propaganda Round</button>
-        <button class="button">Choose a Space</button>
     </nav>
   </header>
 
+  <div class="container">
+    <h1>Click the appropriate response to progress:</h1>
+
+    <div id="Question1" class="show">
+      <p>How many spaces are you selecting from?</p><br>
+      <button type="button" data-next="Two">Two</button>
+      <button type="button" data-next="Three">Three</button>
+      <button type="button" data-next="Other">Other</button>
+    </div>
+
+    <div id="Two" class="hide">
+      <p>Decide which is your first and which is your second space choice.  Now roll a die.</p>
+      <p>On the result of 1, 2 or 3 the first space is selecetd.</p>
+      <p>On the result of 4, 5 or 6 the second space is selecetd.</p>
+    </div>
+
+    <div id="Three" class="hide">
+      <p>Decide which is your first, which is your second, and which is your third space choice.  Now roll a die.</p>
+      <p>On the result of 1 or 2 the first space is selecetd.</p>
+      <p>On the result of 3 or 4 the second space is selecetd.</p>
+      <p>On the result of 5 or 6 the third space is selecetd.</p>
+    </div>
+
+    <div id="Other" class="hide">
+      <p>Click the "Randomise" button to select a random space.</p><br>
+      <button type="button" class="js-space-select-button">Randomise</button>
+      <p class="result"></p>
+    </div>
+
   <footer class="footer">
-    <img src="/images/footer.jpg" alt="Designed by Brian Train, copyright GMT Games, 2017">
+    <img src="images/footer.jpg" alt="Designed by Brian Train, copyright GMT Games, 2017">
   </footer>
   
   <script src="map.js">
