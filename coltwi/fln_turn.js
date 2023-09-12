@@ -9,6 +9,8 @@ for (var i = 0; i < buttons.length; i++) {
       if (question.id == target) {
         question.classList.add('show');
       }
-    }
+    };
+    var height = document.body.scrollHeight;
+    window.scroll(0 , height);
   });
-}
+};

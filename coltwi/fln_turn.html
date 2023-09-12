@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles_fln.css">
+  <link rel="stylesheet" href="fln_turn.css">
   <title>FLN Turn</title>
 </head>
 
 <body>
   <header class="header">
-    <img src="../images/header_mini.jpg" alt="Colonial Twilight - The French-Algerian War, 1954-1962">
+    <img src="images/header_mini.jpg" alt="Colonial Twilight - The French-Algerian War, 1954-1962">
   </header>
 
   <article>
@@ -18,8 +18,8 @@
     <div class="sidebar-left">
       <h4 class="sidebar-heading-left">Menus links:</h4>
       <a class="sidebar-option-left" href="../index.html">Game Select Menu</a>
-      <a class="sidebar-option-left" href="coltwi.html">Colonial Twilight Menu</a>
-      <a class="sidebar-option-left" href="propaganda.html">Propaganda Round</a>
+      <a class="sidebar-option-left" href="main.html">Colonial Twilight Menu</a>
+      <a class="sidebar-option-left" href="fln_prop.html">Propaganda Round</a>
       <a class="sidebar-option-left" href="map.html">Map</a>
     </div>
 
@@ -76,7 +76,7 @@
         <button type="button" data-next="Question11">Extort</button>
         <button type="button" data-next="Question12">Choose Space</button>
         <button type="button" data-next="Question5">No Target</button>
-        <button type="button" onclick="window.location.relaod()">Next Turn</button>
+        <button type="button" data-next="nextTurn" onclick="window.location.href='fln_turn.html'";>Next Turn</button>
       </div>
 
       <div id="Question6b" class="hide">
@@ -93,7 +93,7 @@
         <button type="button" data-next="Question11">Extort</button>
         <button type="button" data-next="Question12">Choose Space</button>
         <button type="button" data-next="Question5">No Target</button>
-        <button type="button" onclick="window.location.relaod()">Next Turn</button>
+        <button type="button" data-next="nextTurn" onclick="window.location.href='fln_turn.html'";>Next Turn</button>
       </div>
 
       <div id="Question7" class="hide">
@@ -146,7 +146,7 @@
   <script src="fln_turn.js"></script>
   
   <footer class="footer" id="footer">
-    <img src="/images/footer.jpg" alt="Designed by Brian Train, copyright GMT Games, 2017">
+    <img src="images/footer.jpg" alt="Designed by Brian Train, copyright GMT Games, 2017">
   </footer>
 
   <script src="fln_turn.js">
