@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles_fln.css">
+  <title>FLN Turn</title>
+</head>
+
+<body>
+  <header class="header">
+    <img src="../images/header_mini.jpg" alt="Colonial Twilight - The French-Algerian War, 1954-1962">
+  </header>
+
+  <article>
+
+
+    <div class="sidebar-left">
+      <h4 class="sidebar-heading-left">Menus links:</h4>
+      <a class="sidebar-option-left" href="../index.html">Game Select Menu</a>
+      <a class="sidebar-option-left" href="coltwi.html">Colonial Twilight Menu</a>
+      <a class="sidebar-option-left" href="propaganda.html">Propaganda Round</a>
+      <a class="sidebar-option-left" href="map.html">Map</a>
+    </div>
+
+    <div class="container">
+      <h1>Click the appropriate response to progress:</h1>
+
+      <div id="Question1" class="show">
+        <p>Does the FLN have <strong>ZERO</strong> resources <em>and</em> only has a <strong>LIMITED OPERATION</strong> choice?</p><br>
+        <button type="button" data-next="Pass">Yes</button>
+        <button type="button" data-next="Question2">No</button>
+      </div>
+
+      <div id="Question2" class="hide">
+        <p>1. Check at each 0 population space with an FLN base to see if it has at least one underground guerrilla.</p>
+        <p>2. Now check all 1+ population spaces with FLN bases to ensure that they each have at least two underground Guerrillas.</p><br>
+        <p>Was this requirment met?</p><br>
+        <button type="button" data-next="Question3">Yes</button>
+        <button type="button" data-next="Question4">No</button>
+      </div>
+
+      <div id="Question3" class="hide">
+        <p>Are the FLN able to play the current Event, and would it reduce the Government victory margin?</p>
+        <button type="button" data-next="Question5">Yes</button>
+        <button type="button" data-next="Question6">No</button>
+      </div>
+
+      <div id="Question4" class="hide">
+        <p>Were you already active on this event card <em><strong>and</strong></em> you will be second eligible on the next card?</p><br>
+        <button type="button" data-next="Question7">Yes</button>
+        <button type="button" data-next="Question8">No</button>
+      </div>
+
+      <div id="Question5" class="hide">
+        
+        <button type="button" data-next="Question9">Yes</button>
+        <button type="button" data-next="Question10">No</button>
+      </div>
+
+      <div id="Question6" class="hide">
+        <p>Is this the last campaign?</p>
+        <button type="button" data-next="Question6b">Yes</button>
+        <button type="button" data-next="Question6a">No</button>
+      </div>
+
+      <div id="Question6a" class="hide">
+        <!--Terror Operations procedure NOT in last campaign-->
+        <p>FLN will try to do Terror operations as long as the following are met:</p>
+        <p>1. It will target as many spaces as possible until it runs out of targets or resources.</p>
+        <p>2. It will never activate the last guerrilla at an FLN base.</p>
+        <p>3. If FLN resources run out during the operation and there are still valid targets, click "Extort" below.</p><br>
+        <p>target spaces with Support in decreasing order of popualion, so highest population first. In the case of a tie, choose a random space or click the "Choose Space" button.</p><br>
+        <p>If there are no valid targets at all then click the "No Target" button below.</p>
+        <p>If the FLN did at least one Terror operation, and has now finished with valid targets, click the "Next Turn" button below.</p>
+        <button type="button" data-next="Question11">Extort</button>
+        <button type="button" data-next="Question12">Choose Space</button>
+        <button type="button" data-next="Question5">No Target</button>
+        <button type="button" onclick="window.location.relaod()">Next Turn</button>
+      </div>
+
+      <div id="Question6b" class="hide">
+        <!--Terror Operations procedure in last campaign-->
+        <p>FLN will try to do Terror operations as long as the following are met:</p>
+        <p>1. It will target as many spaces as possible until it runs out of targets or resources.</p>
+        <p>2. It will never activate the last guerrilla at an FLN base.</p>
+        <p>3. If FLN resources run out during the operation and there are still valid targets, click "Extort" below.</p><br>
+        <p>The FLN will target the following spaces:</p>
+        <p>1. Spaces with Support in decreasing order of popualion, so highest population first. In the case of a tie, choose a random space or click the "Choose Space" button.</p><br>
+        <p>2. Next, neutral spaces that can be Pacified and don't already have a terror marker.  As above, they will choose the highest population first.</p><br>
+        <p>If there are no valid targets at all then click the "No Target" button below.</p>
+        <p>If the FLN did at least one Terror operation, and has now finished with valid targets, click the "Next Turn" button below.</p>
+        <button type="button" data-next="Question11">Extort</button>
+        <button type="button" data-next="Question12">Choose Space</button>
+        <button type="button" data-next="Question5">No Target</button>
+        <button type="button" onclick="window.location.relaod()">Next Turn</button>
+      </div>
+
+      <div id="Question7" class="hide">
+        7.
+        <button type="button" data-next="Question13">Yes</button>
+        <button type="button" data-next="Question14">No</button>
+      </div>
+
+      <div id="Question8" class="hide">
+        <p>Would an FLN rallying place a Base?</p><br>
+        <button type="button" data-next="Question15">Yes</button>
+        <button type="button" data-next="Question16">No</button>
+      </div>
+
+      <div id="Question9" class="hide">
+        9.
+        <button type="button" data-next="Question17">Yes</button>
+        <button type="button" data-next="Question18">No</button>
+      </div>
+
+      <div id="Question15" class="hide">
+        15.
+        <button type="button" data-next="Question17">Yes</button>
+        <button type="button" data-next="Question18">No</button>
+      </div>
+
+      <div id="Question16" class="hide">
+        <p>Count the total number of FLN guerrillas at bases on the map.</p>
+        <p>Now roll a die and divide the result by 2, rounding up. Add the result to the above count.</p>
+        <p>Does this total exceed twice the number of FLN bases already on the map?</p><br>
+        <button type="button" data-next="Question15">Yes</button>
+        <button type="button" data-next="Question18">No</button>
+      </div>
+
+      <div id="Pass" class="hide">
+        <p>The FLN chooses to pass.  Give them one resource and move their eligibility cylinder to "Pass".</p><br>
+        <button type="button" data-next="nextTurn" onclick="window.location.href='fln_turn.html'";>Next Turn</button>
+      </div>
+    </div>
+
+    <div class="sidebar-right">
+      <h4 class="sidebar-heading-right">Other links:</h4>
+      <a class="sidebar-option-right" href="https://www.gmtgames.com/p-548-colonial-twilight-the-french-algerian-war-1954-62.aspx" target="_blank" rel="noopener noreferrer nofollow">GMT Games</a>
+      <a class="sidebar-option-right" href="https://boardgamegeek.com/boardgame/180199/colonial-twilight-french-algerian-war-1954-62" target="_blank" rel="noopener noreferrer nofollow">BoardGameGeek</a>
+      <a class="sidebar-option-right" href="https://s3-us-west-2.amazonaws.com/gmtwebsiteassets/colonialtwilight/ColTwi-RULES-LR-May2018.pdf" target="_blank" rel="noopener noreferrer nofollow">Living Rulebook</a>
+      <a class="sidebar-option-right" href="https://s3-us-west-2.amazonaws.com/gmtwebsiteassets/colonialtwilight/ColTwi-PLAYBOOK-Oct2018.pdf" target="_blank" rel="noopener noreferrer nofollow">Living Playbook</a>
+    </div>
+  </article>
+
+  <script src="fln_turn.js"></script>
+  
+  <footer class="footer" id="footer">
+    <img src="/images/footer.jpg" alt="Designed by Brian Train, copyright GMT Games, 2017">
+  </footer>
+
+  <script src="fln_turn.js">
+  </script>
+</body>
+
+</html>
