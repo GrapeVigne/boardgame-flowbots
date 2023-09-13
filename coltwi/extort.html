@@ -25,31 +25,52 @@
     <div class="container">
       <h1>Click the appropriate response to progress:</h1>
 
-      <div id="Question11" class="hide">
-        <p>Does the FLN have less than 5 resources remaining?</p>
-        <button type="button" data-next="Question11a">Yes</button>
+      <div id="Question11a" class="hide">
+        <p>Is the FLN only allowed a <strong>Limited Operation</strong>?</p>
+        <button type="button" data-next="Question11e">Yes</button>
         <button type="button" data-next="Question11b">No</button>
       </div>
 
-      <div id="Question11a" class="hide">
+      <div id="Question11b" class="hide">
+        <p>Has the FLN already used <strong>Subvert</strong> or <strong>Ambush</strong> this turn?</p>
+        <button type="button" data-next="Question11e">Yes</button>
+        <button type="button" data-next="Question11c">No</button>
+      </div>
+
+      <div id="Question11c" class="hide">
+        <p>Does the FLN have less than 5 Resources remaining?</p>
+        <button type="button" data-next="Question11d">Yes</button>
+        <button type="button" data-next="Question11g">No</button>
+      </div>
+
+      <div id="Question11d" class="hide">
         <p>The FLN will attempt to Extort at any spaces that meet the following requirements:</p>
         <p>1. The space has 1+ Population.</p>
         <p>2. There are <strong>Underground</strong> Guerrillas present.</p><br>
-        <p>The FLN will not activate the last Underground Guerrilla at any of its <strong>Algerian</strong> Bases.</p>
-
-        <!--FIX THIS UP WITH EXTRA BUTTONS ETC-->
+        <p>The FLN will <strong>not</strong> activate the last Underground Guerrilla at any of its <strong>Algerian</strong> Bases.</p><br>
         <p>The spaces will be chosen in the following order, exhausting all possibilities at each level before checking the next:</p>
-        <p>1. Firstly, where there are 2+ guerrillas present.  If this is at an FLN base and there are cubes there, then only if 3+ guerrillas.</p>
+        <p>1. Firstly, where there are 2+ Guerrillas present.  If this is at an FLN Base and there are Cubes there, then only if 3+ Guerrillas.</p>
         <p>2. In Morocco and Tunisia.</p>
-        <p>3. If still at zero resources, then in any and every space possible.</p><br>
+        <p>3. If still at zero Resources, then in any and every space possible.</p><br>
         <p>Did the FLN manage to Extort at least once?</p>
         <button type="button" onclick="javascript:window.close()">Yes - Close Window</button>
-        <button type="button" data-next="Question14">No</button>
+        <button type="button" data-next="Question11g">No</button>
       </div>
 
-      <div id="Question11b" class="hide">
-        <p>The FLN will not Extort, it will Subvert instead.</p>
-              <!--Subvert Special Activity TO BE COMPLETED-->
+      <div id="Question11e" class="hide">
+        <p>The FLN will not be able to use Extort this turn.</p><br>
+        <button type="button" onclick="javascript:window.close()">Close Window</button>
+      </div>
+
+      <div id="Question11f" class="hide">
+        <p>Has the FLN already tried to Subvert this turn?</p>
+        <button type="button" data-next="Question11e">Yes</button>
+        <button type="button" data-next="Question11g">No</button>
+      </div>
+
+      <div id="Question11g" class="hide">
+        <p>The FLN will try to Subvert instead.</p><br>
+        <button type="button" onclick="window.open('subvert.html')";>Subvert</button>
       </div>
     </div>
 

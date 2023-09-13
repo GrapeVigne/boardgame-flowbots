@@ -25,12 +25,47 @@
     <div class="container">
       <h1>Click the appropriate response to progress:</h1>
 
-      <div id="Question14" class="hide" id="subvert">
-        <!--STILL TO BE FIXED UP FROM SCRATCH-->
-        <p>Did the FLN already Extort this turn?</p>
-        <button type="button" onclick="window.location.href='fln_turn.html'";>Yes - End Turn</button>
-        <button type="button" onclick="window.open('subvert.html')";>No</button>
+      <div id="Question14" class="hide">
+        <p>Is the FLN only allowed a <strong>Limited Operation</strong>?</p>
+        <button type="button" data-next="Question14c">Yes</button>
+        <button type="button" data-next="Question14a">No</button>
       </div>
+
+      <div id="Question14a" class="hide">
+        <p>Has the FLN already used <strong>Extort</strong> or <strong>Ambush</strong> this turn?</p>
+        <button type="button" data-next="Question11z">Yes</button>
+        <button type="button" data-next="Question11b">No</button>
+      </div>
+
+      <div id="Question14b" class="hide">
+        <p>The FLN will attemot to Subvert in up to <strong>two</strong> spaces with <strong>both of</strong>:</p>
+        <p>1. At least one Algerian Cube.</p>
+        <p>2. At least one <strong>Underground</strong> Guerrilla.</p><br>
+        <p>The FLN will select targets in the following order:</p>
+        <p>1. To remove the <strong>last</strong> Cube from up to two spaces (Police before Troops).</p>
+        <p>2. In one space <strong>replace</strong> one Algerian Police with a Guerrilla.</p>
+        <p>3. If the Government has already played <strong>and</strong> at least one piece has been removed per points 1 and 2 above, then in a random space where able.</p><br>
+        <p>Did the FLN Subvert at least once?</p>
+        <button type="button" onclick="javascript:window.close()">Yes - Close Window</button>
+        <button type="button" data-next="Question14d">No</button>
+      </div>
+
+      <div id="Question14c" class="hide">
+        <p>The FLN will not be able to use Subvert this turn.</p><br>
+        <button type="button" onclick="javascript:window.close()">Close Window</button>
+      </div>
+
+      <div id="Question14d" class="hide">
+        <p>Has the FLN already tried to Extort this turn?</p>
+        <button type="button" data-next="Question14c">Yes</button>
+        <button type="button" data-next="Question14e">No</button>
+      </div>
+
+      <div id="Question14e" class="hide">
+        <p>The FLN will try to Extort instead.</p><br>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
     </div>
 
     <div class="sidebar-right">
