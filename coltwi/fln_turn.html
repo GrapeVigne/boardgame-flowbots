@@ -33,88 +33,89 @@
       </div>
 
       <div id="Question2" class="hide">
-        <p>1. Check at each 0 population space with an FLN base to see if it has at least one underground guerrilla.</p>
-        <p>2. Now check all 1+ population spaces with FLN bases to ensure that they each have at least two underground Guerrillas.</p><br>
-        <p>Was this requirment met?</p><br>
+        <p>Check all 0 Population spaces with FLN Bases to ensure that they each have at least one <strong>Underground</strong> Guerrilla.</p>
+        <p>Now check all 1+ Population spaces with FLN Bases to ensure that they each have at least two <strong>Underground</strong> Guerrillas.</p><br>
+        <p>Were these requirments met?</p><br>
         <button type="button" data-next="Question3">Yes</button>
         <button type="button" data-next="Question4">No</button>
       </div>
 
       <div id="Question3" class="hide">
-        <p>Are the FLN able to play the current Event, and would it reduce the Government victory margin?</p>
+        <p>Are the FLN able to play the current Event <strong>and</strong> it will reduce the Government victory margin?</p><br>
         <button type="button" data-next="Question5">Yes</button>
         <button type="button" data-next="Question6">No</button>
       </div>
 
       <div id="Question4" class="hide">
-        <p>Were you already active on this event card <em><strong>and</strong></em> you will be second eligible on the next card?</p><br>
+        <p>Were you already active on this Event card <strong>and</strong> you will be second Eligible on the next card?</p><br>
         <button type="button" data-next="Question6">Yes</button>
         <button type="button" data-next="Question8">No</button>
       </div>
       
       <div id="Question5" class="hide">
-        <p>Is the FLN eligible to play the Event?</p>
-        <button type="button" data-next="Question5b">Yes</button>
+        <p>Is the FLN Eligible to play the Event?</p>
+        <button type="button" data-next="Question5a">Yes</button>
         <button type="button" data-next="Question12">No</button>
       </div>
 
       <div id="Question5a" class="hide">
-        <p>Would this Event be effective for the FLN to play? For a Dual-Use Event look at the shaded text.</p>
-        <p>Make sure you first check the "Events Marked for FLN" section of the Player Aid to see if this card has any special instructions.</p><br>
-        <p>An Event is considered effective if it causes a change in the game state, or is a Capability or Momentum Event that may change the game state in future. </p>
-        <p>The FLN will <em>always</em> play Capabilities, regardless of whose they are.</p>
-        <p>They will only play Momentum Events if instructed to do so by the "Events Marked for FLN" section of the Player Aid.</p><br>
+        <p>Is the current Event marked with this FLN symbol?</p>
+        <img src="images/fln-mark.png" id="fln-mark"><br>
+        <button type="button" data-next="Question5b">Yes</button>
+        <button type="button" data-next="Question7a">No</button>
+      </div>
+
+      <div id="Question5b" class="hide">
+        <p>Make sure you first check the <em>"Events Marked for FLN"</em> section of the Player Aid to see if this card has any special instructions.</p>
+        <p>The FLN will <strong>always</strong> play Capabilities, regardless of whose they are.</p>
+        <p>They will only play Momentum Events if instructed to do so by the <em>"Events Marked for FLN"</em> section of the Player Aid.</p>
+        <p>For a Dual-Use Event look at the shaded text.</p><br>
+        <p>Would this Event be effective for the FLN to play?</p>
         <button type="button" data-next="Answer1">Yes</button>
         <button type="button" data-next="Question12">No</button>
       </div>
 
-      <div id="Question5b" class="hide">
-        <p>Is the current Event marked with this symbol?</p>
-        <img src="images/fln-mark.png" id="fln-mark"><br>
-        <button type="button" data-next="Question5a">Yes</button>
-        <button type="button" data-next="Question7a">No</button>
-      </div>
-
       <div id="Answer1" class="hide">
-        <p>Play the Event, following any special instructions that may be found on the "Events Marked for FLN" section of the Player Aid.</p>
-        <p></p><br>
-        <p>When you're ready, click the Next Turn button to proceed.</p>
-        <button type="button" data-next="nextTurn" onclick="window.location.href='fln_turn.html'";>Next Turn</button>        
+        <p>Play the Event, following any special instructions that may be found on the <em>"Events Marked for FLN"</em> section of the Player Aid.</p>
+        <p>Click the "Next Turn" button to proceed.</p>
+        <button type="button" onclick="window.location.href='fln_turn.html'";>Next Turn</button>        
       </div>
 
       <div id="Question6" class="hide">
-        <p>Is this the last campaign?</p>
+        <p>Is this the last Campaign (only one Propaganda card remains)?</p>
         <button type="button" data-next="Question6b">Yes</button>
         <button type="button" data-next="Question6a">No</button>
       </div>
 
       <div id="Question6a" class="hide">
         <!--Terror Operations procedure NOT in last campaign-->
-        <p>FLN will try to do Terror operations as long as the following are met:</p>
-        <p>1. It will target as many spaces as possible until it runs out of targets or resources.</p>
-        <p>2. It will never activate the last underground guerrilla at an FLN base.</p>
-        <p>3. If FLN resources run out during the operation and there are still valid targets, click "Extort" below.</p><br>
-        <p>Target spaces with Support in decreasing order of popualion, so highest population first. In the case of a tie, choose a random space or click the "Choose Space" button. They will exhaust all possibilities at the higher population level before moving to the next level of targets.</p><br>
+        <p>FLN will try to do Terror Operations as long as the following are met:</p>
+        <p>1. It will target as many spaces as possible until it runs out of targets or Resources.</p>
+        <p>2. It will never Activate the last Underground Guerrilla at an FLN base.</p>
+        <p>3. If FLN Resources run out during the Operation and there are still valid targets, click "Extort" below.</p><br>
+        <p>Target spaces with Support in decreasing order of Population.</p>
+        <p>They will exhaust all possibilities at each Population level before moving to the next.</p>
+        <p>In the case of a tie, choose a random space or click the "Choose Space" button.</p><br>
         <p>If there are no valid targets at all then click the "No Target" button below.</p>
-        <p>If the FLN did at least one Terror operation, and has now finished with valid targets, click the "Continue" button below.</p>
-        <button type="button" data-next="Question11">Extort</button>
-        <button type="button" data-next="chooseSpace" onclick="window.open('map.html')";>Choose Space</button>
+        <p>If the FLN did at least one Terror operation, click the "Continue" button below.</p>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+        <button type="button" onclick="window.open('map.html')";>Choose Space</button>
         <button type="button" data-next="Question5">No Target</button>
         <button type="button" data-next="Question6c">Continue</button>
       </div>
 
       <div id="Question6b" class="hide">
         <!--Terror Operations procedure in last campaign-->
-        <p>FLN will try to do Terror operations as long as the following are met:</p>
-        <p>1. It will target as many spaces as possible until it runs out of targets or resources.</p>
-        <p>2. It will never activate the last underground guerrilla at an FLN base.</p>
-        <p>3. If FLN resources run out during the operation and there are still valid targets, click "Extort" below.</p><br>
+        <p>FLN will try to do Terror Operations as long as the following are met:</p>
+        <p>1. It will target as many spaces as possible until it runs out of targets or Resources.</p>
+        <p>2. It will never activate the last Underground Guerrilla at an FLN Base.</p>
+        <p>3. If FLN Resources run out during the Operation and there are still valid targets, click "Extort" below.</p><br>
         <p>The FLN will target the following spaces:</p>
-        <p>1. Spaces with Support in decreasing order of popualion, so highest population first. In the case of a tie, choose a random space or click the "Choose Space" button. They will exhaust all possibilities at the higher population level before moving to the next level of targets.</p><br>
-        <p>2. Next, neutral spaces that can be Pacified and don't already have a terror marker.  As above, they will choose the highest population first.</p><br>
+        <p>1. Spaces with Support in decreasing order of Popualion. They will exhaust all possibilities at each Population level before moving to the next. In the case of a tie, choose a random space or click the "Choose Space" button.</p>
+        <p>2. Next, Neutral spaces that can be Pacified and don't already have a Terror marker.  As above, they will choose the highest Population first.</p><br>
         <p>If there are no valid targets at all then click the "No Target" button below.</p>
-        <p>If the FLN did at least one Terror operation, and has now finished with valid targets, click the "Continue" button below.</p>
-        <button type="button" data-next="Question11">Extort</button>
+        <p>If the FLN did at least one Terror operation, click the "Continue" button below.</p>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
         <button type="button" data-next="chooseSpace" onclick="window.open('map.html')";>Choose Space</button>
         <button type="button" data-next="Question5">No Target</button>
         <button type="button" data-next="Question6c">Continue</button>
@@ -122,12 +123,12 @@
 
       <div id="Question6c" class="hide">
         <p>Did the FLN Extort during this action?</p>
-        <button type="button" data-next="nextTurn" onclick="window.location.href='fln_turn.html'";>Yes - Next Turn</button>
-        <button type="button" data-next="Question14">No</button>
+        <button type="button" onclick="window.location.href='fln_turn.html'";>Yes - Next Turn</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
       </div>
 
       <div id="Question7a" class="hide">
-        <p>Is the Event a Capability of either faction?</p>
+        <p>Is the Event a Capability (of either faction)?</p>
         <button type="button" data-next="Question9">Yes</button>
         <button type="button" data-next="Question7b">No</button>
       </div>
@@ -139,81 +140,174 @@
       </div>
 
       <div id="Question8" class="hide">
-        <p>Would an FLN rallying place a Base?</p><br>
+        <p>Would a Base be placed if the FLN Rally?</p><br>
         <button type="button" data-next="Question13">Yes</button>
         <button type="button" data-next="Question8a">No</button>
       </div>
 
       <div id="Question8a" class="hide">
-        <p>Count the total number of FLN guerrillas at bases on the map.</p>
-        <p>Now roll a die and divide the result by 2, rounding up. Add the result to the above count.</p>
-        <p>Does this total exceed twice the number of FLN bases already on the map?</p><br>
+        <p>Count the total number of FLN Guerrillas at bases on the map.</p>
+        <p>Now roll a die and divide the result by 2 (rounding up). Add the result to the above count.</p>
+        <p>Does this total exceed twice the number of FLN Bases already on the map?</p><br>
         <button type="button" data-next="Question10">Yes</button>
         <button type="button" data-next="Question13">No</button>
       </div>
 
       <div id="Question9a" class="hide">
-        <p>If played, would this Event reduce the Government's victory margin? For a Dual-Use Event look at the shaded text.</p>
+        <p>If played, would this Event reduce the Government's victory margin? For a Dual-Use Event look at the <strong>shaded</strong> text.</p>
         <button type="button" data-next="Answer2">Yes</button>
         <button type="button" data-next="Question9b">No</button>
       </div>
 
       <div id="Question9b" class="hide">
-        <p>If played, would this Event reduce the Government's resources? For a Dual-Use Event look at the shaded text.</p>
+        <p>If played, would this Event reduce the Government's resources? For a Dual-Use Event look at the <strong>shaded</strong> text.</p>
         <button type="button" data-next="Answer2">Yes</button>
         <button type="button" data-next="Question9c">No</button>
       </div>
 
       <div id="Question9c" class="hide">
-        <p>If played, would this Event shift the France track towards "F" or the Border Zone Track towards "0"? For a Dual-Use Event look at the shaded text.</p>
+        <p>If played, would this Event shift the France track towards "F" or the Border Zone Track towards "0"? For a Dual-Use Event look at the <strong>shaded</strong> text.</p>
         <button type="button" data-next="Answer2">Yes</button>
         <button type="button" data-next="Question9d">No</button>
       </div>
       
       <div id="Question9d" class="hide">
-        <p>If played, would this Event place at least one FLN base? For a Dual-Use Event look at the shaded text.</p>
+        <p>If played, would this Event place at least one FLN Base? For a Dual-Use Event look at the <strong>shaded</strong> text.</p>
         <button type="button" data-next="Answer2">Yes</button>
         <button type="button" data-next="Question12">No</button>
       </div>
 
       <div id="Answer2" class="hide">
         <p>Play the Event.</p>
-        <p>When you're ready, click the Next Turn button to proceed.</p>
-        <button type="button" data-next="nextTurn" onclick="window.location.href='fln_turn.html'";>Next Turn</button>        
+        <p>When you're ready, click the "Next Turn" button to proceed.</p>
+        <button type="button" onclick="window.location.href='fln_turn.html'";>Next Turn</button>        
       </div>
 
       <div id="Question10" class="hide">
         <!--March Operation-->
-        <p>Does the FLN have 8 or less remaining resources?</p>
+        <p>Does the FLN have 8 or less remaining Resources?</p>
         <button type="button" data-next="Question10a">Yes</button>
         <button type="button" data-next="Question10b">No</button>
       </div>
 
       <div id="Question10a" class="hide">
-        <p>The FLN will try to March its guerrillas as long as the following conditions are met:</p>
-        <p>1. It has resources remaining.  If resources reach 0, the FLN will try to Extort.</p>
+        <p>The FLN will try to March its Guerrillas as long as the following conditions are met:</p>
+        <p>1. It has Resources remaining.  If Resources reach 0, the FLN will try to Extort.</p>
         <p>2. There is a valid target.</p>
-        <p>3. At FLN bases there will still be two or more guerrillas remaining <em>after</em> the March.</p>
-        <p>4. In spaces without bases they will not March out their last <em>underground</em> guerrilla.</p>
-        <p>5. In spaces with support they will not March out their last guerrilla.</p>
-        <p>6. In population 1+ spaces, the FLN will only March out guerrillas until they would give the Government player control of the space.</p>
+        <p>3. At least two Guerrillas will remain in target spaces with FLN Bases after the March.</p>
+        <p>4. In spaces without Bases they will not March out their last <strong>Underground</strong> Guerrilla.</p>
+        <p>5. In spaces with Support they will not March out their last Guerrilla.</p>
+        <p>6. In Population 1+ spaces, the FLN will stop Marching out Guerrillas before they would give the Government player Control of the space.</p><br>
+        <p>If needed to fill a priority, the FLN will:</p>
+        <p> - use the ability of Guerrillas to March again even if they just Marched but are still in the same Wilaya.</p>
+        <p> - March out of Morocco and Tunisia (even if becoming Active due to the Border Zone Track).</p>
+        <p> - combine Marching Guerrillas from multiple source spaces to enter single destinations.</p>
+        <button type="button" data-next="Question10c">Select Targets</button>
+      </div>  
 
       <div id="Question10b" class="hide">
-        <p>Does the FLN have 8 or less remaining resources?</p>
-        <button type="button" data-next="Question17">Yes</button>
-        <button type="button" data-next="Question18">No</button>
+        <p>Check how many Resources the FLN currently has.  It will only spend up to 2/3 (rounded down) of this amount on this Operation.</p>
+        <p>The FLN will try to March its Guerrillas as long as the following conditions are met:</p>
+        <p>1. It has 1/3 or more Resources remaining.</p>
+        <p>2. There is a valid target.</p>
+        <p>3. At least two Guerrillas will remain in target spaces with FLN Bases after the March.</p>
+        <p>4. In spaces without Bases they will not March out their last <strong>underground</strong> Guerrilla.</p>
+        <p>5. In spaces with Support they will not March out their last Guerrilla.</p>
+        <p>6. In Population 1+ spaces, the FLN will stop Marching out Guerrillas before they would give the Government player control of the space.</p><br>
+        <button type="button" data-next="Question10d">Select targets</button>
       </div>
 
-      <div id="Question11" class="hide">
-        <!--Extort Special Activity-->
-        <p></p>
-        <button type="button" data-next="Question17">Yes</button>
-        <button type="button" data-next="Question18">No</button>
+      <div id="Question10c" class="hide">
+        <p>The FLN will target spaces in the following order, exhausting all possibilities at each level before checking the next:</p>
+        <p>March to get one <strong>Underground</strong> Guerrilla to each FLN Base in <strong>Algeria</strong> that does not have one.</p>
+        <p>Prioritize spaces to which the March costs the least.</p><br>
+        <p>Is March still possible?</p>
+        <button type="button" data-next="Question10c-1">Yes</button>
+        <button type="button" onclick="window.open('subvert.html')";>Subvert</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
+      <div id="Question10c-1" class="hide"></div>
+        <p>March one Guerrilla to each space at Support if no Guerrillas are there already.</p>
+        <p>If the <em>Amature Bombers</em> Capability is in effect, March two Guerrillas to up to one City space.</p>
+        <p>Prioritise spaces as follows:</p>
+        <p>1. First where guerrillas remain underground.</p>
+        <p>2. Then on the cheapest route.</p><br>
+        <p>Is March still possible?</p>
+        <button type="button" data-next="Question10c-2">Yes</button>
+        <button type="button" onclick="window.open('subvert.html')";>Subvert</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
+      <div id="Question10c-2" class="hide"></div>
+        <p>March to <strong>one</strong> 1+ Population space with no Opposition <strong>and</strong> where it will remove Government Control.</p>
+        <p>Prioritise spaces as follows:</p>
+        <p>1. First in Mountains.</p>
+        <p>2. Then with the highest Population.</p>
+        <p>3. Then along the cheapest route.</p><br>
+        <p>Is March still possible?</p>
+        <button type="button" data-next="Question10c-3">Yes</button>
+        <button type="button" onclick="window.open('subvert.html')";>Subvert</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
+      <div id="Question10c-3" class="hide"></div>
+        <p>Get <strong>exactly three</strong> Guerrillas to one non-Resettled 0 Population space with room for a Base.</p>
+        <p>Prioritise spaces as follows:</p>
+        <p>1. Where there are the least Cubes.</p>
+        <p>2. The in Mountains.</p>
+        <p>3. Then along the cheapest route.</p>
+        <p>4. Then where one or more Marching Guerrillas can remain Underground.</p><br>
+        <p>Once all Marches are done, the FLN may Subvert.  Click the "Subvert" button below.</p>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+        <button type="button" onclick="window.open('subvert.html')";>Subvert</button>
+      </div>
+
+      <div id="Question10d" class="hide">
+        <p>The FLN will target spaces in the following order, exhausting all possibilities at each level before checking the next:</p>
+        <p>March to get one <strong>Underground</strong> Guerrilla to each FLN Base in <strong>Algeria</strong> that does not have one.</p>
+        <p>Prioritize spaces to which the March costs the least.</p><br>
+        <p>Is March still possible?</p>
+        <button type="button" data-next="Question10d-1">Yes</button>
+        <button type="button" onclick="window.open('subvert.html')";>Subvert</button>
+      </div>
+
+      <div id="Question10d-1" class="hide"></div>
+        <p>March one Guerrilla to each space at Support if no Guerrillas are there already.</p>
+        <p>If the <em>Amature Bombers</em> Capability is in effect, March two Guerrillas to up to one City space.</p>
+        <p>Prioritise spaces as follows:</p>
+        <p>1. First where guerrillas remain underground.</p>
+        <p>2. Then on the cheapest route.</p><br>
+        <p>Is March still possible?</p>
+        <button type="button" data-next="Question10d-2">Yes</button>
+        <button type="button" onclick="window.open('subvert.html')";>Subvert</button>
+      </div>
+
+      <div id="Question10d-2" class="hide"></div>
+        <p>March to <strong>one</strong> 1+ Population space with no Opposition <strong>and</strong> where it will remove Government Control.</p>
+        <p>Prioritise spaces as follows:</p>
+        <p>1. First in Mountains.</p>
+        <p>2. Then with the highest Population.</p>
+        <p>3. Then along the cheapest route.</p><br>
+        <p>Is March still possible?</p>
+        <button type="button" data-next="Question10d-3">Yes</button>
+        <button type="button" onclick="window.open('subvert.html')";>Subvert</button>
+      </div>
+
+      <div id="Question10d-3" class="hide"></div>
+        <p>Get <strong>exactly three</strong> Guerrillas to one non-Resettled 0 Population space with room for a Base.</p>
+        <p>Prioritise spaces as follows:</p>
+        <p>1. Where there are the least Cubes.</p>
+        <p>2. The in Mountains.</p>
+        <p>3. Then along the cheapest route.</p>
+        <p>4. Then where one or more Marching Guerrillas can remain Underground.</p><br>
+        <p>Once all Marches are done, the FLN may Subvert.  Click the "Subvert" button below.</p>
+        <button type="button" onclick="window.open('subvert.html')";>Subvert</button>
       </div>
 
       <div id="Question12" class="hide">
         <!--Attack operation-->
-        <p>FLN will try to do Attack operations as long as the following are met:</p>
+        <p>FLN will try to do Attack Operations as long as the following are met:</p>
         <p>1. It will target as many spaces as possible until it runs out of targets or resources.</p>
         <p>2. It will never activate the last underground guerrilla at an FLN base.</p>
         <p>3. If FLN resources run out during the operation and there are still valid targets, click then "Extort" button, unless they have already used Ambush.</p>
@@ -234,13 +328,12 @@
         <p>If FLN resources run out during the operation and there are still valid targets, click then "Extort" button, unless they have already used Ambush.</p>
         <div class="extra-buttons">  
           <button type="button" data-next="chooseSpace" onclick="window.open('map.html')";>Choose Space</button>
-          <button type="button" data-next="Question11">Extort</button><br>
-        </div>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
         <p>If there are no targets, click the "No Target" button below.</p>
         <button type="button" data-next="Question8">No Target</button><br>
         <p>After exhausting all of the above targets, does the FLN still have resources and guerrillas available to Attack?</p>
         <button type="button" data-next="Question12b">Yes</button>
-        <button type="button" data-next="nextTurn" onclick="window.location.href='fln_turn.html'";>No - Next Turn</button>
+        <button type="button" onclick="window.location.href='fln_turn.html'";>No - Next Turn</button>
       </div>
 
       <div id="Question12b" class="hide">
@@ -254,39 +347,163 @@
         <p>If FLN resources run out during the operation and there are still valid targets, click then "Extort" button, unless they have already used Ambush.</p>
         <div class="extra-buttons">
           <button type="button" data-next="chooseSpace" onclick="window.open('map.html')";>Choose Space</button>
-          <button type="button" data-next="Question11">Extort</button><br>
+          <button type="button" onclick="window.open('extort.html')";>Extort</button>
         </div>
         <p>If there are no targets, click the "No Target" button below to move to the next turn.</p><br>
         <p>If the FLN did at least one Attack operation, and has now finished with valid targets, click the "Continue" button below.</p>
         <button type="button" data-next="chooseSpace" onclick="window.open('map.html')";>Choose Space</button>
-        <button type="button" data-next="nextTurn" onclick="window.location.href='fln_turn.html'";>No Target</button>
-        <button type="button" data-next="Question11">Continue</button><br>
+        <button type="button" onclick="window.location.href='fln_turn.html'";>No Target</button>
+        <button type="button" onclick="window.open('extort.html')";>Continue</button>
       </div>
 
       <div id="Question12c" class="hide">
         <p>Did the FLN Ambush as part of the Attacks?</p>
-        <button type="button" data-next="nextTurn" onclick="window.location.href='fln_turn.html'";>Yes - Next Turn</button>
-        <button type="button" data-next="Question11">No</button>
+        <button type="button" onclick="window.location.href='fln_turn.html'";>Yes - Next Turn</button>
+        <button type="button" onclick="window.open('extort.html')";>No</button>
       </div>
 
       <div id="Question13" class="hide">
-        <!--Rally Operation-->
+        <!--Rally Operation TO BE COMPLETED-->
+        <p>Does the FLN have 8 or less remaining Resources?</p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+      </div>
+
+      <div id="Question13a" class="hide">
+        <p>FLN will try to do Rally Operations as long as the following are met:</p>
+        <p>1. It has Resources remaining.  If Resources reach 0, the FLN will try to Extort.</p>
+        <p>2. There is a valid target.</p>
+        <p>3. There is no more than <strong>one</strong> FLN Base per <strong>Algerian</strong> space.</p>
+        <button type="button" data-next="Question13a-1">Select Targets</button>
+      </div>
+
+      <div id="Question13a-1" class="hide">
         <p></p>
-        <button type="button" data-next="Question17">Yes</button>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
+      <div id="Question13a-2" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
+      <div id="Question13a-3" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
+      <div id="Question13a-4" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
+      <div id="Question13a-5" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
+      <div id="Question13a-6" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
+      <div id="Question13a-7" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
+      <div id="Question13a-8" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
+      <div id="Question13a-9" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+        <button type="button" onclick="window.open('extort.html')";>Extort</button>
+      </div>
+
+      <div id="Question13b" class="hide">
+        <p>Check how many Resources the FLN currently has.  It will only spend up to 2/3 (rounded down) of this amount on this Operation.</p>
+        <p>The FLN will try to Rally as long as the following conditions are met:</p>
+        <p>1. The FLN will not Rally more than <strong>six</strong> times in this Operation.</p>
         <button type="button" data-next="Question18">No</button>
       </div>
 
-      
-      <div id="Question14" class="hide">
-        <!--Subvert Special Activity-->
+      <div id="Question13b-1" class="hide">
         <p></p>
-        <button type="button" data-next="Question17">Yes</button>
-        <button type="button" data-next="Question18">No</button>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+      </div>
+
+      <div id="Question13b-2" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+      </div>
+
+      <div id="Question13b-3" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+      </div>
+
+      <div id="Question13b-4" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+      </div>
+
+      <div id="Question13b-5" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+      </div>
+
+      <div id="Question13b-6" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+      </div>
+
+      <div id="Question13b-7" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+      </div>
+
+      <div id="Question13b-8" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
+      </div>
+
+      <div id="Question13b-9" class="hide">
+        <p></p>
+        <button type="button" data-next="Question13a">Yes</button>
+        <button type="button" data-next="Question13b">No</button>
       </div>
 
       <div id="Pass" class="hide">
-        <p>The FLN chooses to pass.  Give them one resource and move their eligibility cylinder to "Pass".</p><br>
-        <button type="button" data-next="nextTurn" onclick="window.location.href='fln_turn.html'";>Next Turn</button>
+        <p>The FLN chooses to pass. Give them one resource and move their eligibility cylinder to "Pass".</p><br>
+        <button type="button" onclick="window.location.href='fln_turn.html'";>Next Turn</button>
       </div>
     </div>
 
@@ -298,15 +515,12 @@
       <a class="sidebar-option-right" href="https://s3-us-west-2.amazonaws.com/gmtwebsiteassets/colonialtwilight/ColTwi-PLAYBOOK-Oct2018.pdf" target="_blank" rel="noopener noreferrer nofollow">Living Playbook</a>
     </div>
   </article>
-
-  <script src="fln_turn.js"></script>
   
   <footer class="footer" id="footer">
     <img src="images/footer.jpg" alt="Designed by Brian Train, copyright GMT Games, 2017">
   </footer>
 
-  <script src="fln_turn.js">
-  </script>
+  <script src="fln_turn.js"></script>
 </body>
 
 </html>
