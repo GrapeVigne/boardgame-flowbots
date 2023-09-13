@@ -15,13 +15,13 @@ for (var i = 0; i < buttons.length; i++) {
   });
 };
 
-//Pivotal event not yet played, exclude Morocco and Tunisia
-const spacesNotIndependent = ['Mecheria', 'Oran', 'Tlemcen', 'Sidi Bel Abbes', 'Mostaganem', 'Saida', 'Mascara', 'Tiaret', 'Orleansville', 'Ain Sefra', 'Lagouat', 'Algiers', 'Sidi Aissa', 'Ain Oussera', 'Medea', 'Bordj Bou Arreridj', 'Biskra', 'Bougie', 'Setif', 'Barika', 'Constantine', 'Batna', 'Oum El Bouaghi', 'Philippeville', 'Negrine', 'Tebessa', 'Souk Ahras'];
-
 //Pivotal event in effect, include Morocco and Tunisia
-const spacesIndependent = ['Morocco', 'Mecheria', 'Oran', 'Tlemcen', 'Sidi Bel Abbes', 'Mostaganem', 'Saida', 'Mascara', 'Tiaret', 'Orleansville', 'Ain Sefra', 'Lagouat', 'Algiers', 'Sidi Aissa', 'Ain Oussera', 'Medea', 'Bordj Bou Arreridj', 'Biskra', 'Bougie', 'Setif', 'Barika', 'Constantine', 'Batna', 'Oum El Bouaghi', 'Philippeville', 'Negrine', 'Tebessa', 'Souk Ahras', 'Tunisia'];
+const spacesIndependent = ['Tunisia', 'Morocco', 'Mecheria', 'Oran', 'Tlemcen', 'Sidi Bel Abbes', 'Mostaganem', 'Saida', 'Mascara', 'Tiaret', 'Orleansville', 'Ain Sefra', 'Lagouat', 'Algiers', 'Sidi Aissa', 'Ain Oussera', 'Medea', 'Bordj Bou Arreridj', 'Biskra', 'Bougie', 'Setif', 'Barika', 'Constantine', 'Batna', 'Oum El Bouaghi', 'Philippeville', 'Negrine', 'Tebessa', 'Souk Ahras'];
+
+//Pivotal event not yet played, exclude Morocco and Tunisia
+const spacesNotIndependent = spacesIndependent.slice(2);
 
 let spacesAvailable = [];
 
 const randomStartSpace = Math.floor(Math.random() * spacesAvailable.length);
-console.log(random, spacesAvailable[random]);
+  
