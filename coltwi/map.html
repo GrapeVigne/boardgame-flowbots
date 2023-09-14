@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="fln_turn.css">
+  <link rel="stylesheet" href="main.css">
   <title>Choose a Map Space</title>
 </head>
 
@@ -12,38 +12,60 @@
     <img src="images/header_mini.jpg" alt="Colonial Twilight - The French-Algerian War, 1954-1962">
   </header>
 
-  <div class="container">
-    <h1>Click the appropriate response to progress:</h1>
-
-    <div id="Question1" class="show">
-      <p>How many spaces are you selecting from?</p><br>
-      <button type="button" data-next="Two">Two</button>
-      <button type="button" data-next="Three">Three</button>
-      <button type="button" data-next="Other">Other</button>
+  <article>
+    <div class="sidebar-left">
+      <h4 class="sidebar-heading-left">Menus links:</h4>
+      <a class="sidebar-option-left" href="../index.html">Game Select Menu</a>
+      <a class="sidebar-option-left" href="main.html">Colonial Twilight Menu</a>
+      <a class="sidebar-option-left" href="fln_prop.html">Propaganda Round</a>
+      <a class="sidebar-option-left" href="map.html">Map</a>
     </div>
 
-    <div id="Two" class="hide">
-      <p>Decide which is your first and which is your second space choice.  Now roll a die.</p>
-      <p>On the result of 1, 2 or 3 the first space is selecetd.</p>
-      <p>On the result of 4, 5 or 6 the second space is selecetd.</p>
+    <div class="container">
+      <h1>Click the appropriate response to progress:</h1>
+
+      <div id="Question1" class="show">
+        <p>How many spaces are you selecting from?</p><br>
+        <button type="button" data-next="Two">Two</button>
+        <button type="button" data-next="Three">Three</button>
+        <button type="button" data-next="Question2">Other</button>
+      </div>
+
+      <div id="Two" class="hide">
+        <p>Decide which is your first and which is your second space choice.  Now roll a die.</p>
+        <p>On the result of 1, 2 or 3 the first space is selecetd.</p>
+        <p>On the result of 4, 5 or 6 the second space is selecetd.</p>
+      </div>
+
+      <div id="Three" class="hide">
+        <p>Decide which is your first, which is your second, and which is your third space choice.  Now roll a die.</p>
+        <p>On the result of 1 or 2 the first space is selecetd.</p>
+        <p>On the result of 3 or 4 the second space is selecetd.</p>
+        <p>On the result of 5 or 6 the third space is selecetd.</p>
+      </div>
+
+      <div id="Question2" class="hide">
+        <p>Has the <em>"Morocco and Tunisia Independent"</em> Pivotal Event already been played?</p><br>
+        <button type="button" id="pivotal-played">Yes</button>
+        <button type="button" id="pivotal-not-played">No</button>
+      </div>
+
+      <div class="result result-text" id="result-text"></div>
+      <div class="result result-button"></div>
+      <div class="result result-picture"></div>
+      <div class="result-finished"></div>
+
+      <button type="button" onclick="javascript:window.close()">Close Window</button>
     </div>
-
-    <div id="Three" class="hide">
-      <p>Decide which is your first, which is your second, and which is your third space choice.  Now roll a die.</p>
-      <p>On the result of 1 or 2 the first space is selecetd.</p>
-      <p>On the result of 3 or 4 the second space is selecetd.</p>
-      <p>On the result of 5 or 6 the third space is selecetd.</p>
+  
+    <div class="sidebar-right">
+      <h4 class="sidebar-heading-right">Other links:</h4>
+      <a class="sidebar-option-right" href="https://www.gmtgames.com/p-548-colonial-twilight-the-french-algerian-war-1954-62.aspx" target="_blank" rel="noopener noreferrer nofollow">GMT Games</a>
+      <a class="sidebar-option-right" href="https://boardgamegeek.com/boardgame/180199/colonial-twilight-french-algerian-war-1954-62" target="_blank" rel="noopener noreferrer nofollow">BoardGameGeek</a>
+      <a class="sidebar-option-right" href="https://s3-us-west-2.amazonaws.com/gmtwebsiteassets/colonialtwilight/ColTwi-RULES-LR-May2018.pdf" target="_blank" rel="noopener noreferrer nofollow">Living Rulebook</a>
+      <a class="sidebar-option-right" href="https://s3-us-west-2.amazonaws.com/gmtwebsiteassets/colonialtwilight/ColTwi-PLAYBOOK-Oct2018.pdf" target="_blank" rel="noopener noreferrer nofollow">Living Playbook</a>
     </div>
-
-    <div id="Other" class="hide">
-      <p>Click the "Randomise" button to select a random space.</p><br>
-      <button type="button" class="js-space-select-button">Randomise</button>
-    </div>
-
-    <div class="randomised-space"></div>
-
-    <button type="button" onclick="javascript:window.close()">Close Map</button>
-  </div>
+  </article>
 
   <footer class="footer">
     <img src="images/footer.jpg" alt="Designed by Brian Train, copyright GMT Games, 2017">
