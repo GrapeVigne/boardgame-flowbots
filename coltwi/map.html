@@ -24,7 +24,7 @@
     <div class="container">
       <h1>Click the appropriate response to progress:</h1>
 
-      <div id="Question1" class="show">
+      <div id="Question1" class="show Question1">
         <p>How many spaces are you selecting from?</p><br>
         <button type="button" data-next="Two">Two</button>
         <button type="button" data-next="Three">Three</button>
@@ -35,6 +35,8 @@
         <p>Decide which is your first and which is your second space choice.  Now roll a die.</p>
         <p>On the result of 1, 2 or 3 the first space is selecetd.</p>
         <p>On the result of 4, 5 or 6 the second space is selecetd.</p>
+        <p>Click "Select Another" if you need another random space, or you may close this window.</p><br>
+        <button class="js-button" type="button" onclick="location.reload();">Select Another</button>
       </div>
 
       <div id="Three" class="hide">
@@ -42,6 +44,8 @@
         <p>On the result of 1 or 2 the first space is selecetd.</p>
         <p>On the result of 3 or 4 the second space is selecetd.</p>
         <p>On the result of 5 or 6 the third space is selecetd.</p>
+        <p>Click "Select Another" if you need another random space, or you may close this window.</p><br>
+        <button class="js-button" type="button" onclick="location.reload();">Select Another</button>
       </div>
 
       <div id="Question2" class="hide">
@@ -50,12 +54,17 @@
         <button type="button" id="pivotal-not-played">No</button>
       </div>
 
-      <div class="result result-text" id="result-text"></div>
-      <div class="result result-button"></div>
-      <div class="result result-picture"></div>
-      <div class="result-finished"></div>
-
-      <button type="button" onclick="javascript:window.close()">Close Window</button>
+      <div class="results-box">
+        <div class="result">
+          <div class="result-text" id="hide-text"></div>
+          <div class="result-button" id="hide-button"></div>
+        </div>
+        <div class="result-picture" id="hide-picture"></div>
+      </div>
+      
+      <div class="no-results-box">
+        <div class="result-finished" id="result-finished"></div>
+      </div>
     </div>
   
     <div class="sidebar-right">
