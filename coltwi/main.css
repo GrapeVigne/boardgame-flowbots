@@ -140,3 +140,12 @@ p {
 .results-box {
 	display: flex;
 }
+
+.finished {
+	pointer-events: none;
+}
+
+.clicked  {
+	background-color: rgb(150, 150, 150);
+	color: darkgray;
+}
