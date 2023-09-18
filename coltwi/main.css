@@ -26,24 +26,26 @@ article {
 	display: flex;
 	flex-direction: column;
 	padding: 5%;
-	width: 76%;
+	width: 85%;
 }
 
 .content {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	width: auto;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin-left: 12%;
+	margin-right: 12%;
 	margin-bottom: 30px;
 }
 
 .sidebar-left {
 	background-color: rgb(205, 205, 200);
-	width: 12%;
+	width: 15%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 .sidebar-heading-left {
@@ -53,25 +55,6 @@ article {
 .sidebar-option-left {
 	font-size: 14px;
 	margin: 10px 0 0 6px;
-	text-decoration: none;
-}
-
-.sidebar-right {
-	background-color: rgb(205, 205, 200);
-	width: 12%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.sidebar-heading-right {
-	margin-left: auto;
-	margin-right: 6px;
-}
-
-.sidebar-option-right {
-	font-size: 14px;
-	margin: 10px 6px 0 auto;
 	text-decoration: none;
 }
 
@@ -89,6 +72,12 @@ footer {
 	justify-content: center;
 	background-color: black;
 	padding: 10px;
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 5px 0 5px; 
 }
 
 button {
