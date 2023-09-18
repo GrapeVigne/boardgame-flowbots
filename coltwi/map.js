@@ -52,7 +52,7 @@ function noMoreSpaces() {
 };
 
 function spacesFinished() {
-  let resultFinished = `<p>There are no spaces remaining to choose from.</p><p>You can close this window, or click "Begin Again" to run through all the spaces again.</p><br><button class="js-button" type="button" onclick="location.reload();">Begin Again</button>
+  let resultFinished = `<p>There are no spaces remaining to choose from.</p><p>You can close this window, or click "Begin Again" to run through all the spaces again.</p><button class="js-button" type="button" onclick="location.reload();">Begin Again</button>
   `;
   document.querySelector('.result-finished').innerHTML = resultFinished;
   return;
@@ -63,7 +63,7 @@ function getRandomSpaceNotIndependent() {
   let resultButton = '';
   let resultPicture = '';
   let chosenSpace = chooseRandom(spacesNotIndependent);
-  resultText = `<p>Does ${chosenSpace} qualify?</p><br>`
+  resultText = `<p>Does ${chosenSpace} qualify?</p>`
   resultButton = `<button type='button' class='js-button' onclick='javascript:window.close()'>Yes - Close Window</button><button type='button' class='js-button' onclick='getRandomSpaceNotIndependent();'>No - Select Another</button>`;
   resultPicture = `<img src="images/${chosenSpace}.jpg">`
   document.querySelector('.result-text').innerHTML = resultText;
