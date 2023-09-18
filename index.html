@@ -8,25 +8,30 @@
 </head>
 <body>
   <header>
-    <div class="banner-top">
-      <img src="/images/flowbot-banner.jpg" alt="The FlowBot Project">
-      <menu>
-        <div class="sort-by">Sort by Name</div>
-      </menu>
-    </div>
+    <img class="banner-top" src="images/Flowbot.jpg" alt="The FlowBot Project header">
+    <h1>THE FLOWBOT PROJECT</h1>
   </header>
 
   <div class="container">
     <div class="sidebar-left">
+      <a href="#coin-games">GMT COIN Games</a>
+      <a href="#other-gmt-games">Other GMT Games</a>
+      <a href="#other-games">Other Games</a>
     </div>
 
     <article>
-      <h1></h1>
-      <p></p>
+      <div class="about">
+        <h2>About the Flowbot Project:</h2>
+        <p>Many board games can be played solo using some kind of artificial intelligence, often nicknamed a 'bot'.  These vary greatly in complexity, with some of the more complicated involving flowcharts to simulate the A.I. decision making.</p>
+        <p>As a big fan of the GMT Games COIN series who would often try to tackle the games so, I became very familiar with the flowcharts and A.I. involved.  Personally, while maybe not perfect, I find them to be excellent ways to play the game.  However, following the flowcharts was not always the easiest of experiences.</p>
+        <p>The main pitfalls I personally found were, firstly, that the text on the flowchart itself was often truncated, and so not always clear.  Secondly, the flowchart itself could be a little tricky to navigate.</p>
+        <p>Well, I have recently been learning a little bit of web development, and so decided to take one of the GMT Games (Colonial Twilight as it happened) and see if I could turn the flowchart into a webpage that walked you through each bot turn, step by step. One think led to another, and one game became several, and the monster you have here was born.</p>
+        <p>My sincere hope is that some other players out there may find this useful and enjoyable to use also, and that some of those solo bots will get to see  a little more play time.</p>
+      </div>
 
       <div class="game-catagory">
-        <h2>COIN Games</h2>
-        <div class="coin-games">
+        <h2>COIN Games:</h2>
+        <div id="coin-games">
           <div class="game-cover">
             <img class="box-cover" src="/images/all-bridges-cover.jpg">
             <p>All Bridges Burning</p>
@@ -77,16 +82,16 @@
           </div>
         </div>
 
-        <h2>Other GMT Games</h2>
-        <div class="other-gmt-games">
+        <h2>Other GMT Games:</h2>
+        <div id="other-gmt-games">
           <div class="game-cover">
             <img class="box-cover" src="/images/labyrinth-cover.jpg">
             <p>Labyrinth</p>
           </div>
         </div>
 
-        <h2>Other Games</h2>
-        <div class="other-games">
+        <h2>Other Games:</h2>
+        <div id="other-games">
           <div class="game-cover-wide">
             <img class="box-cover" src="/images/root.jpg">
             <p>Root</p>
@@ -102,11 +107,17 @@
       </div>
     </article>
 
-    <div class="sidebar-right"></div>
+    <div class="sidebar-right">
+      <a class="sidebar-option-right" href="https://www.gmtgames.com/">GMT Games</a>
+      <a class="sidebar-option-right" href="https://boardgamegeek.com/" target="_blank" rel="noopener noreferrer nofollow">BoardGameGeek</a>
+    </div>
   </div>
 
   <footer>
-    <div class="banner-bottom"></div>
+    <div class="banner-bottom">
+      <p>The FlowBot Project is created and maintained by Max 'Grape' Vigne. It is a free software project.</p>
+      <p>The source code is available on <a href="github-link">GitHub</a>.</p>
+    </div>
     <nav class="menu"></nav>
   </footer>
 </body>
