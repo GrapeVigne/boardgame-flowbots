@@ -15,10 +15,21 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 150px;
+	height: 200px;
 	width: auto;
-	background-color: rgb(235,235,210);
-	border: solid 1px darkgoldenrod;
+	background-color: rgb(225,150,20);
+	border: solid 1px brown;
+}
+
+menu {
+	display: flex;
+	flex-direction: column;
+}
+
+menu button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 100px;
 }
 
 footer {
