@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bot-rules.css">
+  <title>Rule changes for Bots</title>
+</head>
+
+<body>
+  <header>
+    <img class="banner" src="images/root-alt-banner.jpg" alt="Root: A Game of Woodland Might and Right">
+  </header>
+
+  <article>
+    <div class="sidebar">
+      <h4 class="sidebar-heading">Menus links:</h4>
+      <a class="sidebar-option" href="../index.html">Game Select Menu</a><br>
+
+      <h4 class="sidebar-heading">Rulebook links:</h4>
+      <a class="sidebar-option" href="https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_of_Root_June_30_2023.pdf?v=1692479548" target="_blank" rel="noopener noreferrer nofollow">Law of Root</a>
+      <a class="sidebar-option" href="https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Clockwork_Law_of_Rootbotics_web_Oct_15_2020.pdf?v=1603318377" target="_blank" rel="noopener noreferrer nofollow">Law of Rootbotics</a>
+      <a class="sidebar-option" href="https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Learn_to_Play_web_Oct_15_2020.pdf?v=1603389572" target="_blank" rel="noopener noreferrer nofollow">Learn to Play</a>
+      <a class="sidebar-option" href="https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Walking_Through_Root_web_Oct_15_2020.pdf?v=1603137225" target="_blank" rel="noopener noreferrer nofollow">Walkthrough</a>
+      <a class="sidebar-option" href="https://docs.google.com/document/d/1usz2D3BCurx2nKEOtDseCwNaFL7vOArvGHdrIt_KPio/edit?pli=1#heading=h.ajbz5613xi1a" target="_blank" rel="noopener noreferrer nofollow">Root FAQ</a>
+      <a class="sidebar-option" href="https://docs.google.com/document/d/1yBwLDRo0OuziCeRiX2SOpv63gH8_dmoCrGd8NyDuyC8/edit" target="_blank" rel="noopener noreferrer nofollow">Root Errata</a>
+      <br>
+
+      <h4 class="sidebar-heading">Other links:</h4>
+      <a class="sidebar-option" href="https://ledergames.com/products/root-a-game-of-woodland-might-and-right" target="_blank" rel="noopener noreferrer nofollow">Leder Games</a>
+      <a class="sidebar-option" href="https://boardgamegeek.com/boardgame/237182/root" target="_blank" rel="noopener noreferrer nofollow">BGG - Root</a>
+      <a class="sidebar-option" href="https://boardgamegeek.com/boardgameexpansion/287220/root-clockwork-expansion" target="_blank" rel="noopener noreferrer nofollow">BGG - Clockwork Expansion</a>
+    </div>
+
+    <div class="container">
+      <div class="contents">
+        <h1>What would you like to know more about?</h1>
+        <div id="QuestionA" class="show">
+          <h3>Changes to:</h3>
+          <div class="button-box">
+            <button type="button" data-next="Crafting">Crafting</button>
+            <button type="button" data-next="Battling">Battling</button>
+            <button type="button" data-next="Dominance">Dominance Cards</button>
+          </div>  
+        </div>
+      
+        <div id="QuestionB" class="show">
+          <h3>New rules for selecting:</h3>
+          <button type="button" data-next="Clearing">Target Clearing</button>
+          <button type="button" data-next="Faction">Target Faction</button>
+        </div>
+
+        <div id="QuestionC" class="show">
+          <h3>Other new rules regarding:</h3>
+          <div class="button-box">
+            <button type="button" data-next="Action">Order of Actions</button>
+            <button type="button" data-next="OrderCards">Order Cards</button>
+            <button type="button" data-next="HandSize">Hand Size</button>
+            <button type="button" data-next="Ambush">Ambush Cards</button>
+          </div>
+        </div>
+
+        <div id="Crafting" class="hide response">
+          <h4>Crafting:</h4>
+          <p><strong>Cost:</strong> Bots craft items without activating crafting pieces. (The item must still be in the supply to craft).</p>
+          <p><strong>Items:</strong> Whenever a bot crafts an item, it ignores the listed victory points and instead scores only one victory point.</p>
+          <p><strong>Persistent Effects:</strong> Bots cannot craft cards with persistent effects.</p><br>
+          <button type="button" onclick="location.reload();">Refresh Page</button>
+        </div>
+
+        <div id="Battling" class="hide response">
+          <h4>Battling:</h4>
+          <p><strong>Taking Hits:</strong> When taking hits, a bot removes all its tokens from the clearing before removing any of its buildings there. If it has multiple types of buildings that it could remove there, it chooses which to remove at random.</p><br>
+          <button type="button" onclick="location.reload();">Refresh Page</button>
+        </div>
+
+        <div id="Dominance" class="hide response">
+          <h4>Dominance Cards:</h4>
+          <p>Bots cannot play a dominance card to change their victory condition.</p><br>
+          <button type="button" onclick="location.reload();">Refresh Page</button>
+        </div>
+
+        <div id="Clearing" class="hide response">
+          <h4>Clearing Target Priority:</h4>
+          <div class="content-box">
+            <div class="text-box">
+              <p>If a bot must choose among clearings to target with an action, it follows all of the rules listed by its action.</p>
+              <p> If it cannot target a clearing based on those rules, it targets the clearing of highest priority, as shown by the priority markers placed on the map, from among the clearings it would have targeted based on those rules.</p>
+              <p>The clearing of highest priority is marked “1,” and the clearing of lowest priority is marked “12.”</p><br>
+              <div>
+                <button type="button" class="special-button" onclick="showImg(1);">Fall Map</button>                
+                <button type="button" class="special-button" onclick="showImg(2);">Lake Map</button> 
+                <button type="button" class="special-button" onclick="showImg(3);">Winter Map</button>
+                <button type="button" class="special-button" onclick = "showImg(4);">Mountain Map</button>
+                <button type="button" onclick="location.reload();">Refresh Page</button>
+              </div>
+            </div>
+            <div class="image-box">
+              <img id="picture1" src="images/priorities-fall.png" class="hide map">
+              <img id="picture2" src="images/priorities-lake.png" class="hide map">
+              <img id="picture3" src="images/priorities-winter.png" class="hide map">
+              <img id="picture4" src="images/priorities-mountain.png" class="hide map">
+            </div>
+          </div>
+        </div>
+
+        <div id="Faction" class="hide response content-box">
+          <div class="text-box">
+            <h4>Faction Target Priority:</h4>
+            <p>If a bot must choose among factions to target with an action, it follows all rules listed by its action.</p>
+            <p> If it cannot target a faction based on those rules, it targets the faction with the highest setup priority, from highest to lowest, as follows:</p><br>
+            <button type="button" onclick="location.reload();">Refresh Page</button>
+          </div>
+          <div class="list-box">
+            <ol>
+            <li>Marquise de Cat</li>
+            <li>Eyrie Dynasties</li>
+            <li>Woodland Alliance</li>
+            <li>Vagabond</li>
+            <li>Lizard Cult</li>
+            <li>Riverfolk Company</li>
+            <li>Underground Duchy</li>
+            <li>Corvid Conspiracy</li>
+            </ol>
+          </div>
+        </div>
+
+        <div id="Action" class="hide response">
+          <h4>Order of Actions:</h4>
+          <p>If a bot would take multiple actions with different targets that might produce different results based on the order of those actions, the bot takes them in order of highest to lowest target priority.</p>
+          <p>When moving, assess the priority order of the origin clearings (<em>not the destinations</em>).</p><br>
+          <button type="button" onclick="location.reload();">Refresh Page</button>
+        </div>
+
+        <div id="OrderCards" class="hide response">
+          <h4>Order Cards:</h4>
+          <p>On its turn, a bot draws and reveals a card, called the order card, to determine some actions it takes.</p>
+          <p>The term "Ordered" means “matching the suit of the current order card.”</p><br>
+          <button type="button" onclick="location.reload();">Refresh Page</button>
+        </div>
+
+        <div id="HandSize" class="hide response">
+          <h4>Hand Size:</h4>
+          <p><strong>Poor Manual Dexterity:</strong></p>
+          <p>The bots have no hand of cards.</p>
+          <p>Bots cannot discard cards.</p>
+          <p>If a human would take a card from a bot, that human draws a card instead.</p>
+          <p>If a human would give a card to a bot, discard that card, and that bot scores 1 victory point.</p><br>
+          <button type="button" onclick="location.reload();">Refresh Page</button>
+        </div>
+
+        <div id="Ambush" class="hide response">
+          <h4>Ambush Cards:</h4>
+          <p><strong>Hates Surprises:</strong></p>
+          <p>Ambush cards cannot be played against bots.</p><br>
+          <button type="button" onclick="location.reload();">Refresh Page</button>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <footer>
+    <img class="banner" src="images/root-alt-footer.jpg" alt="Root by Leder Games">
+  </footer>
+
+  <script src="bot-rules.js"></script>
+</body>
+
+</html>

@@ -59,7 +59,12 @@ article {
 a {
 	font-size: 14px;
 	text-decoration: none;
+	color: black;
 	margin: 4px 0;
+}
+
+a:hover {
+	color: blue;
 }
 
 footer {

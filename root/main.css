@@ -40,10 +40,18 @@ button {
 	height: 50px;
 	background-color: rgb(195, 185, 170);
 	font-weight: 600;
-	border: 2px solid b;
+	font-size: 16px;
+	border: 2px solid black;
 	border-radius: 5px;
 	box-shadow: 0 8px 16px 0 lightgray, 0 6px 20px 0 grey;
 	cursor: pointer;
+	padding: 4px;
+}
+
+button:hover {
+	color: darkblue;
+	background-color: lightblue;
+	border: 2px solid blue;
 }
 
 h1 {

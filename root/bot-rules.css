@@ -15,21 +15,10 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 200px;
+	height: 150px;
 	width: auto;
-	background-color: rgb(225,150,20);
-	border: solid 1px brown;
-}
-
-menu {
-	display: flex;
- 
-}
-
-menu button {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-right: 100px;
+	background-color: rgb(235,235,210);
+	border: solid 1px darkgoldenrod;
 }
 
 footer {
@@ -51,11 +40,12 @@ button {
 	height: 50px;
 	background-color: rgb(195, 185, 170);
 	font-weight: 600;
-	font-size: 16px;
 	border: 2px solid black;
 	border-radius: 5px;
 	box-shadow: 0 8px 16px 0 lightgray, 0 6px 20px 0 grey;
 	cursor: pointer;
+	font-size: 16px;
+	margin-right: 10px;
 	padding: 4px;
 }
 
@@ -98,23 +88,30 @@ p {
 	display: flex;
 }
 
-.box-1,
-.box-2 {
+.text-box {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 75%;
 }
 
-.box-1 {
-	padding: 20px 50px 0 0;
+.list-box {
+	margin-left: 60px;
 }
 
-.box-2 {
-	padding: 20px 0 0 50px;
+.button-box {
+	display: flex;
 }
 
-.box-2 div {
-  padding-bottom: 6px;
+.image-box img {
+	width: 300px;
+	margin-left: 60px;
+	margin-top: -30px;
+}
+
+.response {
+	border: 1px solid black;
+	padding: 20px;
+	border-radius: 15px;
 }
 
 .sidebar {
@@ -152,13 +149,6 @@ a:hover {
 	margin-bottom: 50px;
 }
 
-.main-nav {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding: 30px 5px 0 5px; 
-}
-
 .finished {
 	pointer-events: none;
 }
@@ -166,16 +156,4 @@ a:hover {
 .clicked  {
 	background-color: rgb(150, 150, 150);
 	color: darkgray;
-}
-
-.faction-div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: end;
-}
-
-.faction {
-	width: 120px;
-	margin-bottom: 8px;
 }

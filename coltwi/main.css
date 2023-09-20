@@ -75,6 +75,11 @@ article {
 	font-size: 14px;
 	margin: 10px 0 0 6px;
 	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: blue;
 }
 
 .hide {
@@ -104,10 +109,12 @@ button {
 	height: 50px;
 	background-color: rgb(195, 185, 170);
 	font-weight: 600;
+	font-size: 16px;
 	border: 2px solid b;
 	border-radius: 5px;
 	box-shadow: 0 8px 16px 0 lightgray, 0 6px 20px 0 grey;
 	cursor: pointer;
+	padding: 4px;
 }
 
 h1 {

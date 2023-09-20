@@ -13,10 +13,6 @@
     <div class="header-img">
       <img class="banner" src="../images/marquise-banner.jpg" alt="Root: A Game of Woodland Might and Right">
     </div>
-    <menu>
-      <button>Setup</button>
-      <button>Bot Turn</button>
-    </menu>
   </header>
 
   <article>
@@ -43,59 +39,35 @@
 
     <div class="container">
       <div>
-        <h1>The Law of Rootbotics... mechanised!</h1>
-        
-        <h3>About Root:</h3>
-        <p>Root is a game of adventure and war where players battle for control of a vast wilderness.</p>
-        <p>The nefarious Marquise de Cat has seized the great woodland, intent on harvesting its riches. Under her rule, the many creatures of the forest have banded together. This Alliance will seek to strengthen its resources and subvert the rule of Cats. In this effort, the Alliance may enlist the help of the wandering Vagabonds who are able to move through the more dangerous woodland paths. Though some may sympathize with the Alliance’s hopes and dreams, these wanderers are old enough to remember the great birds of prey who once controlled the woods.</p>
-        <p>Meanwhile, at the edge of the region, the proud, squabbling Eyrie have found a new commander who they hope will lead their faction to resume their ancient birthright.</p>
-        <p>The stage is set for a contest that will decide the fate of the great woodland. It is up to the players to decide which group will ultimately take root.</p>
-        
-        <div class="content-box">
-          <div class="box-1">
-            <h3>How to use this app:</h3>
-            <p>This app is designed to take you through the decision making process for the Clockwork Bots provided with the Clockwork expansion.  It does not automate the decisions, but will walk you through the flowcharts step-by-step.</p>
-            <p>First you'll need to choose the bot's faction you want to run from the options below.</p>
-            <p>Next decide if you need the setup, or if it's a game turn.</p>  
-            <p>Click on the appropriate button to start the process.</p>
-          </div>
-          <div class="box-2">          
-            <h3>Things to remember when running the bots:</h3>
-            <div class="mini-para">
-              <h4>Crafting</h4>
-              <p>1. <strong>Cost:</strong> Bots craft items without activating crafting pieces. (The item must still be in the supply to craft.)</p>
-              <p>2. <strong>Items:</strong> Whenever a bot crafts an item, it ignores the listed victory points and instead scores only one victory point.</p>
-              <p>3. <strong>Persistent Effects:</strong> Bots cannot craft cards with persistent effects.</p>
-            </div>
-            <div class="mini-para">
-              <h4>Battling</h4>
-              <p>1. <strong>Taking Hits:</strong> When taking hits, a bot removes all its tokens from the clearing of battle before re- moving any of its buildings there. If it has multiple types of buildings that it could remove there, it chooses which to remove at random.</p>
-            </div>
-            <div class="mini-para">
-              <h4>Dominance Cards</h4>
-              <p>1. Bots cannot play a dominance card to change their victory condition.</p>
-            </div>
-          </div>
+        <h1>Click on the appropriate response to proceed:</h1>
+        <div id="Question1" class="show">
+          <button type="button" data-next="Question2">Setup</button>
+          <button type="button" data-next="Question3">Bot Turn</button>
         </div>
-      </div>
+      
+        <div id="Question2" class="hide">
+          <button type="button" data-next="Question3">Yes</button>
+          <button type="button" data-next="Question4">No</button>
+        </div>
 
-      <div class="main-nav">
-        <div class="faction-div">
-          <img class="faction" src="images/marquise.png">
-          <button onclick=location.href="marquise/marquise.html">Mechanical Marquise</button>
+        <div id="Question2" class="hide">
+          <button type="button" data-next="Question3">Yes</button>
+          <button type="button" data-next="Question4">No</button>
         </div>
-        <div class="faction-div">
-          <img class="faction" src="images/eyrie.png">
-          <button onclick=location.href="eyrie/eyrie.html">Electric Eyrie</button>
+
+        <div id="Question2" class="hide">
+          <button type="button" data-next="Question3">Yes</button>
+          <button type="button" data-next="Question4">No</button>
         </div>
-        <div class="faction-div">
-          <img class="faction" src="images/alliance.png">
-          <button onclick=location.href="alliance/alliance.html">Automated Alliance</button>
+
+        <div id="Question2" class="hide">
+          <button type="button" data-next="Question3">Yes</button>
+          <button type="button" data-next="Question4">No</button>
         </div>
-        <div class="faction-div">
-          <img class="faction" src="images/vagabond.png">
-          <button onclick=location.href="vagabot/vagabot.html">Vagabot</button>
-        </div>
+
+
+
+
       </div>
     </div>
   </article>
