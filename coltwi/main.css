@@ -16,6 +16,7 @@ header {
 	justify-content: center;
 	background-color: rgb(195, 185, 170);
 	padding: 0px 0;
+	border: 1px solid rgb(120, 100, 50);
 }
 
 article {
@@ -59,7 +60,9 @@ article {
 }
 
 .sidebar-left {
-	background-color: rgb(205, 205, 200);
+	background-color: rgb(195, 185, 170);
+	border-left: 1px solid rgb(120, 100, 50);
+	border-right: 1px solid rgb(120, 100, 50);
 	width: 15%;
 	display: flex;
 	flex-direction: column;
@@ -115,6 +118,12 @@ button {
 	box-shadow: 0 8px 16px 0 lightgray, 0 6px 20px 0 grey;
 	cursor: pointer;
 	padding: 4px;
+}
+
+button:hover {
+	color: darkblue;
+	background-color: lightblue;
+	border: 2px solid blue;
 }
 
 h1 {

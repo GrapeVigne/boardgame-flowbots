@@ -21,17 +21,6 @@ header {
 	border: solid 1px brown;
 }
 
-menu {
-	display: flex;
- 
-}
-
-menu button {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-right: 100px;
-}
-
 footer {
 	display: flex;
 	align-items: center;
@@ -42,8 +31,12 @@ footer {
 	border: 1px solid darkgoldenrod;
 }
 
-article {
+main {
 	display: flex;
+}
+
+article {
+	width: 80%;
 }
 
 button {
@@ -52,17 +45,19 @@ button {
 	background-color: rgb(195, 185, 170);
 	font-weight: 600;
 	font-size: 16px;
-	border: 2px solid black;
+	border: 2px solid rgb(50, 50, 50);
 	border-radius: 5px;
 	box-shadow: 0 8px 16px 0 lightgray, 0 6px 20px 0 grey;
 	cursor: pointer;
+	margin-right: 10px;
 	padding: 4px;
+	color: rgb(50, 50, 50);
 }
 
 button:hover {
-	color: darkblue;
-	background-color: lightblue;
-	border: 2px solid blue;
+	color: black;
+	background-color: rgb(170,160,150);
+	border: 2px solid black;
 }
 
 h1 {
@@ -83,6 +78,10 @@ p {
 	margin-bottom: 5px;
 }
 
+a:hover {
+	color: blue;
+}
+
 .banner	{
 	height: 90%;
 }
@@ -92,29 +91,6 @@ p {
 	flex-direction: column;
 	padding: 5%;
 	width: 85%;
-}
-
-.content-box {
-	display: flex;
-}
-
-.box-1,
-.box-2 {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-}
-
-.box-1 {
-	padding: 20px 50px 0 0;
-}
-
-.box-2 {
-	padding: 20px 0 0 50px;
-}
-
-.box-2 div {
-  padding-bottom: 6px;
 }
 
 .sidebar {
@@ -139,8 +115,39 @@ p {
 	color: black;
 }
 
-a:hover {
-	color: blue;
+.content-box {
+	display: flex;
+}
+
+.text-box {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+
+.text-box button {
+	margin-top: 30px;
+}
+
+.button-box {
+	display: flex;
+}
+
+img {
+	height: 200px;
+	width: auto;
+	margin-left: 20px;
+}
+
+.wide-img {
+	width: 60%;
+	height: auto;
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.button-box .wide-img	{
+	
 }
 
 .hide {
@@ -152,6 +159,12 @@ a:hover {
 	margin-bottom: 50px;
 }
 
+.response {
+	border: 1px solid black;
+	padding: 20px;
+	border-radius: 15px;
+}
+
 .main-nav {
 	display: flex;
 	justify-content: space-between;
@@ -161,21 +174,4 @@ a:hover {
 
 .finished {
 	pointer-events: none;
-}
-
-.clicked  {
-	background-color: rgb(150, 150, 150);
-	color: darkgray;
-}
-
-.faction-div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: end;
-}
-
-.faction {
-	width: 120px;
-	margin-bottom: 8px;
 }

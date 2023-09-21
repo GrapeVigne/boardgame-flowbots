@@ -42,14 +42,3 @@ function showSetup(id) {
   if (obj != null)
       obj.className = 'show response';
 };
-
-function showTurn(id) {
-  for ( i = 1; i <= 13; i++) {
-      let obj = document.getElementById('Turn' + i);
-      if (obj != null)
-          obj.className = 'hide';
-  }
-  let obj = document.getElementById('Turn' + id);      
-  if (obj != null)
-      obj.className = 'show response';
-};
