@@ -31,8 +31,27 @@ footer {
 	border: 1px solid darkgoldenrod;
 }
 
+main {
+	display: flex;
+}
+
+nav {
+	background-color: rgb(235, 235, 210);
+	width: 15%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	border-left: solid 1px darkgoldenrod;
+	border-right: solid 1px darkgoldenrod;
+	padding: 3% 0.75%;
+}
+
 article {
 	display: flex;
+	flex-direction: column;
+	padding: 3%;
+	width: 80%;
 }
 
 button {
@@ -40,33 +59,36 @@ button {
 	height: 50px;
 	background-color: rgb(195, 185, 170);
 	font-weight: 600;
-	border: 2px solid black;
+	font-size: 16px;
+	border: 2px solid rgb(50, 50, 50);
 	border-radius: 5px;
 	box-shadow: 0 8px 16px 0 lightgray, 0 6px 20px 0 grey;
 	cursor: pointer;
-	font-size: 16px;
 	margin-right: 10px;
 	padding: 4px;
+	color: rgb(50, 50, 50);
 }
 
 button:hover {
-	color: darkblue;
-	background-color: lightblue;
-	border: 2px solid blue;
+	color: black;
+	background-color: rgb(170,160,150);
+	border: 2px solid black;
+	transform: scale(1.05);
 }
 
 h1 {
 	font-size: 36px;
-	margin-bottom: 30px;
+	margin-bottom: 1.5%;
 }
 
 h3 {
   font-size: 24px;
-	margin: 30px 0 10px 0;
+	margin: 1.5% 0 0.5% 0;
 }
 
 h4 {
   font-size: 20px;
+	margin-bottom: 0.5%;
 }
 
 p {
@@ -77,13 +99,6 @@ p {
 	height: 90%;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-	padding: 5%;
-	width: 85%;
-}
-
 .content-box {
 	display: flex;
 }
@@ -91,11 +106,12 @@ p {
 .text-box {
 	display: flex;
 	flex-direction: column;
-	width: 75%;
+	width: 70%;
 }
 
 .list-box {
-	margin-left: 60px;
+	margin-right: 2%;
+	margin-left: auto;
 }
 
 .button-box {
@@ -104,7 +120,7 @@ p {
 
 .image-box img {
 	width: 300px;
-	margin-left: 60px;
+	margin-left: 40px;
 	margin-top: -30px;
 }
 
@@ -112,17 +128,6 @@ p {
 	border: 1px solid black;
 	padding: 20px;
 	border-radius: 15px;
-}
-
-.sidebar {
-	background-color: rgb(235, 235, 210);
-	width: 15%;
-	display: flex;
-	flex-direction: column;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	border-left: solid 1px darkgoldenrod;
-	border-right: solid 1px darkgoldenrod;
 }
 
 .sidebar-heading {
@@ -138,6 +143,7 @@ p {
 
 a:hover {
 	color: blue;
+	font-size: 15px;
 }
 
 .hide {

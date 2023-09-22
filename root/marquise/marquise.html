@@ -61,13 +61,13 @@
               <p> Place the keep token in a random corner clearing.</p>
               <button type="button" onclick="showSetup(3);">Next</button>
             </div>
-            <img src="../images/keep-chit.png"><br>
+            <img class="chit-img" src="../images/keep-chit.png"><br>
           </div>
         </div>
 
         <div id="Setup3" class="hide">
           <p><strong>Step 3: Garrison:</strong></p>
-          <p>Place a warrior in each clearing except the clearing in the diagonally opposite corner from the clearing with the keep token.</p>
+          <p>Place a warrior in each clearing except diagonally opposite the clearing with the keep token.</p>
           <p> Place an extra warrior in the clearing with the keep token.</p><br>
           <button type="button" onclick="showSetup(4);">Next</button>
         </div>        
@@ -76,17 +76,17 @@
           <div class="content-box">
             <div class="text-box">
               <p><strong>Step 4: Place Starting Buildings:</strong></p>
-              <p>Randomly place 1 sawmill, 1 workshop, and 1 recruiter among the clearing with the keep token and those clearings adjacent with up to one building in each clearing.</p><br>
+              <p>Randomly place 1 sawmill, 1 workshop, and 1 recruiter among the clearing with the keep token and those clearings adjacent, with up to one building in each clearing.</p><br>
               <button type="button" onclick="showSetup(5);">Next</button>
             </div>
-            <img src="../images/building-chits.png">
+            <img class="other-img" src="../images/building-chits.png">
           </div>
         </div>
 
         <div id="Setup5" class="hide">
           <p><strong>Step 5: Fill Buildings Tracks:</strong></p>
           <p>Place the remaining 5 sawmills, 5 workshops, and 5 recruiters on the matching Buildings tracks, filling every space except the leftmost space of each track.</p><br>
-          <button type="button" onclick="location.reload();">Refresh Page</button>
+          <button type="button" onclick="location.reload();">Setup Complete</button>
         </div>
 
         <!--Turn steps-->
@@ -98,7 +98,7 @@
               <p>If the order card shows an available item, craft it.</p><br>
               <button type="button" onclick="showTurn(2);">Next</button>
             </div>
-            <img src="../images/card-item.png" width="120px">
+            <img class="card-img" src="../images/card-item.png" width="120px">
           </div>
         </div>
 
@@ -112,22 +112,30 @@
                 <button type="button" onclick="showTurn(3);">No</button>
               </div>
             </div>
-            <img src="../images/card-bird-order.png">
+            <img class="card-img" src="../images/card-bird-order.png">
           </div>
         </div>
 
         <!--Daylight with no Escalate-->
         <div id="Turn3" class="hide response">
           <p><strong>Daylight - Battle:</strong></p>
-          <p>Initiate a battle in each ordered clearing. The defender is the player with the most pieces in the clearing of battle.</p>
-          <p>In the case of a ties, target the player with the most victory points.</p><br>
+          <p>Initiate a battle in each ordered clearing.
+            <ul>
+              <li> The defender is the player with the most pieces in the clearing of battle.</li>
+              <li>In the case of a ties, target the player with the most victory points.</li>
+            </ul><br>
           <button type="button" onclick="showTurn(4);">Next</button>
         </div>
 
         <div id="Turn4" class="hide response">
           <p><strong>Daylight - Recruit:</strong></p>
           <p>Place four warriors among ordered clearings the Marquise rule, distributed evenly.</p>
-          <p>If they rule three such clearings, place the fourth warrior in such a clearing of highest priority.</p><br>
+          <ul>
+            <li>If they rule only one clearing, place all four warriors there.</li>
+            <li>If they rule two clearings, place two warriors in each.</li>
+            <li>If they rule three such clearings, place the fourth warrior in such a clearing of highest priority.</li>
+            <li>If they rule four clearings, place one warrior in each.</li>
+          </ul><br>
           <button type="button" onclick="showTurn(5);">Next</button>
         </div>
 
@@ -135,12 +143,16 @@
           <div class="content-box">
             <div class="text-box">
               <p><strong>Daylight - Build:</strong></p>
-              <p> Place a building in the clearing the Marquise rule with the most Marquise warriors.</p>
-              <p>Place a sawmill if the order card is a fox card, a workshop if it is a rabbit card, or a recruiter if it is a mouse card.</p>
-              <p><em>(The order card determines the type of building placed, not the clearing where it is placed.)</em></p><br>
+              <p> Place a building in the clearing the Marquise rule with the most Marquise warriors.<em> (The order card determines the type of building placed, not the clearing where it is placed.)</em></p>
+              <ul>
+                <li>If the order card is a fox card, place a sawmill.</li>
+                <li>If the order card is a rabbit card, place a workshop.</li>
+                <li>If the order card is a mouse card, place a recruiter.</li>
+              </ul>
+              <br>
               <button type="button" onclick="showTurn(6);">Next</button>
             </div>
-            <img src="../images/marquise-build.png">
+            <img class="other-img" src="../images/marquise-build.png">
           </div>
         </div>
 
@@ -152,8 +164,13 @@
 
         <div id="Turn7" class="hide response">
           <p><strong>Daylight - Expand:</strong></p>
-          <p>If the Marquise did not place a building this turn and have five or fewer buildings on the map, discard the current order card, draw and reveal a new order card, and click "Repeat Daylight" to return to the start of Daylight.</p>
-          <p>Otherwise, if a building was placed, or if there are more than five buildings on the map, click "Next".</p><br>
+          <p>If a building was placed this turn, or if there are more than five buildings on the map, click "Next".</p>
+          <p>Otherwise, if the Marquise did not place a building this turn and has five or fewer buildings on the map, do all of the following:</p>
+          <ul>
+            <li>Discard the current order card.</li>
+            <li>Then draw and reveal a new order card.</li>
+            <li>Then click "Repeat Daylight" to return to the start of Daylight.</li>
+          </ul><br>
           <div class="button-box">
             <button type="button" onclick="showTurn(8);">Next</button>
             <button type="button" onclick="showTurn(2);">Repeat Daylight</button>
@@ -182,8 +199,11 @@
         <!--Daylight with Escalate-->
         <div id="Turn10" class="hide response">
           <p><strong>Daylight - Battle:</strong></p>
-          <p>Initiate a battle in each clearing. The defender is the player with the most pieces in the clearing of battle.</p>
-          <p>In the case of a tie, target such a player with the most victory points.</p><br>
+          <p>Initiate a battle in each clearing.</p>
+          <ul>
+            <li>The defender is the player with the most pieces in the clearing of battle.</li>
+            <li>In the case of a tie, target such a player with the most victory points.</li>
+          </ul><br>
           <button type="button" onclick="showTurn(11);">Next</button>
         </div>
 
@@ -197,7 +217,10 @@
         <div id="Turn12" class="hide response">
           <p><strong>Daylight - Build:</strong></p>
           <p>Place a building of the type with the most pieces on the map in the clearing the Marquise rule with the most Marquise warriors.</p>
-          <p>If there is a tie between sawmills and any other types, place a sawmill. If there is a tie between workshops and recruiters but not sawmills, place a recruiter.</p><br>
+          <ul>
+            <li>If there is a tie between sawmills and any other types, place a sawmill.</li>
+            <li> If there is a tie between workshops and recruiters but not sawmills, place a recruiter.</li>
+          </ul><br>
           <button type="button" onclick="showTurn(13);">Next</button>
         </div>
 

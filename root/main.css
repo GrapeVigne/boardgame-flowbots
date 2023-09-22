@@ -31,8 +31,18 @@ footer {
 	border: 1px solid darkgoldenrod;
 }
 
+main {
+	display: flex;
+}
+
+nav {
+	width: 15%;
+}
+
 article {
 	display: flex;
+	flex-direction: column;
+	width: 75%;
 }
 
 button {
@@ -41,27 +51,30 @@ button {
 	background-color: rgb(195, 185, 170);
 	font-weight: 600;
 	font-size: 16px;
-	border: 2px solid black;
+	border: 2px solid rgb(50, 50, 50);
 	border-radius: 5px;
 	box-shadow: 0 8px 16px 0 lightgray, 0 6px 20px 0 grey;
 	cursor: pointer;
+	margin-right: 10px;
 	padding: 4px;
+	color: rgb(50, 50, 50);
 }
 
 button:hover {
-	color: darkblue;
-	background-color: lightblue;
-	border: 2px solid blue;
+	color: black;
+	background-color: rgb(170,160,150);
+	border: 2px solid black;
+	transform: scale(1.05);
 }
 
 h1 {
 	font-size: 36px;
-	margin-bottom: 30px;
+	margin-bottom: 2%;
 }
 
 h3 {
   font-size: 24px;
-	margin: 30px 0 10px 0;
+	margin-bottom: 1.5%;
 }
 
 h4 {
@@ -72,6 +85,15 @@ p {
 	margin-bottom: 5px;
 }
 
+a {
+	color: black;
+}
+
+a:hover {
+	color: blue;
+	font-size: 15px;
+}
+
 .banner	{
 	height: 90%;
 }
@@ -79,31 +101,28 @@ p {
 .container {
 	display: flex;
 	flex-direction: column;
-	padding: 5%;
-	width: 85%;
+	padding: 3%;
+}
+
+.content {
+	display: flex;
 }
 
 .content-box {
 	display: flex;
-}
-
-.box-1,
-.box-2 {
-	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 65%;
+	margin-top: 2%;
 }
 
-.box-1 {
-	padding: 20px 50px 0 0;
+.text-box {
+	margin-top: 2%;
 }
 
-.box-2 {
-	padding: 20px 0 0 50px;
-}
-
-.box-2 div {
-  padding-bottom: 6px;
+.content img {
+	width: 30%;
+	margin-right: 0;
+	margin-left: auto;
 }
 
 .sidebar {
@@ -111,45 +130,22 @@ p {
 	width: 15%;
 	display: flex;
 	flex-direction: column;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding: 3% 0.75%; 
 	border-left: solid 1px darkgoldenrod;
 	border-right: solid 1px darkgoldenrod;
 }
 
-.sidebar-heading {
-	margin-left: 6px;
-}
-
 .sidebar-option {
 	font-size: 14px;
-	margin: 10px 0 0 6px;
+	margin-top: 6px;
 	text-decoration: none;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-	margin-bottom: 50px;
 }
 
 .main-nav {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 30px 5px 0 5px; 
-}
-
-.finished {
-	pointer-events: none;
-}
-
-.clicked  {
-	background-color: rgb(150, 150, 150);
-	color: darkgray;
+	padding: 0% 5% 3% 3%; 
 }
 
 .faction-div {

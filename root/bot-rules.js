@@ -33,6 +33,14 @@ for (let i = 0; i < buttons.length; i++) {
   });
 };
 
+let allBtn = document.querySelectorAll('.btn');
+
+document.addEventListener('click', () => {
+  allBtn.forEach((butt) => {
+    butt.classList.add('finished');
+  });
+});
+
 function showImg(id) {
   for ( i = 1; i <= 4; i++) {
       let obj = document.getElementById('picture' + i);
@@ -42,4 +50,19 @@ function showImg(id) {
   let obj = document.getElementById('picture' + id);      
   if (obj != null)
       obj.className = 'show';
+};
+
+function showAnswer(id) {
+  for ( i = 1; i <= 9; i++) {
+      let obj = document.getElementById('Answer' + i);
+      if (obj != null)
+          obj.className = 'hide';
+  }
+  let obj = document.getElementById('Answer' + id);      
+  if (obj != null)
+      obj.className = 'show';
+};
+
+window.onbeforeunload = function () {
+  history.scrollRestoration = 'manual';
 };

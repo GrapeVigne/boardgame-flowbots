@@ -53,3 +53,7 @@ function showTurn(id) {
   if (obj != null)
       obj.className = 'show response';
 };
+
+window.onbeforeunload = function () {
+  history.scrollRestoration = 'manual';
+};

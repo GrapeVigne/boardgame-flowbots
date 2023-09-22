@@ -58,6 +58,7 @@ button:hover {
 	color: black;
 	background-color: rgb(170,160,150);
 	border: 2px solid black;
+	transform: scale(1.05);
 }
 
 h1 {
@@ -80,6 +81,10 @@ p {
 
 a:hover {
 	color: blue;
+}
+
+li {
+	margin-left: 3%;
 }
 
 .banner	{
@@ -122,7 +127,7 @@ a:hover {
 .text-box {
 	display: flex;
 	flex-direction: column;
-	width: 70%;
+	width: 80%;
 }
 
 .text-box button {
@@ -133,10 +138,21 @@ a:hover {
 	display: flex;
 }
 
-img {
+.other-img {
+	height: 150px;
+	width: auto;
+	align-self: center;
+}
+
+.card-img {
 	height: 200px;
 	width: auto;
-	margin-left: 20px;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+.chit-img {
+	height: 120px;
 }
 
 .wide-img {
@@ -144,10 +160,8 @@ img {
 	height: auto;
 	margin-right: 0;
 	margin-left: auto;
-}
-
-.button-box .wide-img	{
-	
+	border-radius: 5px;
+	border: 1px black solid;
 }
 
 .hide {
