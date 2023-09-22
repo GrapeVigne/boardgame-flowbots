@@ -60,7 +60,7 @@ function showAnswer(id) {
   }
   let obj = document.getElementById('Answer' + id);      
   if (obj != null)
-      obj.className = 'show';
+      obj.className = 'show response';
 };
 
 window.onbeforeunload = function () {

@@ -164,6 +164,12 @@ li {
 	border: 1px black solid;
 }
 
+.character-img {
+	height: 250px;
+	width: auto;
+	align-self: center;
+}
+
 .hide {
   display: none;
 }

@@ -138,12 +138,14 @@ footer {
 	height: 160px;
 	width: 120px;
 	border: solid 1px;
+	border-radius: 4px;
 }
 
 .box-cover-wide {
 	width: auto;
 	height: 120px;
 	border: solid 1px black;
+	border-radius: 4px;
 }
 
 h1 {
