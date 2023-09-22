@@ -9,32 +9,28 @@
 
 <body>
   <header>
-    <img class="banner-top" src="images/Flowbot.png" alt="The FlowBot Project header">
+    <img class="banner-top" src="images/Flwbot.png" alt="The FlowBot Project header">
     <h1>THE FLOWBOT PROJECT</h1>
   </header>
 
-  <div class="container">
-    <div class="sidebar-left">
+  <main>
+    <nav class="sidebar">
+      <h4>Select Game:</h4>
       <a href="#coin-games">GMT COIN Games</a>
       <a href="#other-gmt-games">Other GMT Games</a>
       <a href="#other-games">Other Games</a><br>
-      <a class="sidebar-option-right" href="https://www.gmtgames.com/">GMT Games</a>
-      <a class="sidebar-option-right" href="https://boardgamegeek.com/" target="_blank" rel="noopener noreferrer nofollow">BoardGameGeek</a>
-    </div>
+      <h4>Other Links:</h4>
+      <a href="https://www.gmtgames.com/" target="_blank" rel="noopener noreferrer nofollow">GMT Games</a>
+      <a href="https://https://ledergames.com/" target="_blank" rel="noopener noreferrer nofollow">Leder Games</a>
+      <a href="https://boardgamegeek.com/" target="_blank" rel="noopener noreferrer nofollow">BoardGameGeek</a><br>
+      <h4>FlowBot Project:</h4>
+      <a href="/about.html" target="_blank">About & Instructions</a>
+    </nav>
 
     <article>
-      <div class="about">
-        <h2>About the Flowbot Project:</h2>
-        <p>Many board games can be played solo using some kind of artificial intelligence, often nicknamed a 'bot'.  These vary greatly in complexity, with some of the more complicated involving flowcharts to simulate the A.I. decision making.</p>
-        <p>As a big fan of the GMT Games COIN series who would often try to tackle the games so, I became very familiar with the flowcharts and A.I. involved.  Personally, while maybe not perfect, I find them to be excellent ways to play the game.  However, following the flowcharts was not always the easiest of experiences.</p>
-        <p>The main pitfalls I personally found were, firstly, that the text on the flowchart itself was often truncated, and so not always clear.  Secondly, the flowchart itself could be a little tricky to navigate.</p>
-        <p>Well, I have recently been learning a little bit of web development, and so decided to take one of the GMT Games (Colonial Twilight as it happened) and see if I could turn the flowchart into a webpage that walked you through each bot turn, step by step. One think led to another, and one game became several, and the monster you have here was born.</p>
-        <p>My sincere hope is that some other players out there may find this useful and enjoyable to use also, and that some of those solo bots will get to see  a little more play time.</p>
-      </div>
-
-      <div class="game-catagory">
-        <h2>COIN Games:</h2>
-        <div id="coin-games">
+      <section class="game-catagory"> 
+        <h2 id="coin-games">COIN Games:</h2>
+        <div class="game-box line-break">
           <div class="game-cover">
             <img class="box-cover" src="/images/all-bridges-cover.jpg">
             <p>All Bridges Burning</p>
@@ -85,31 +81,30 @@
           </div>
         </div>
 
-        <h2>Other GMT Games:</h2>
-        <div id="other-gmt-games">
+        <h2 id="other-gmt-games">Other GMT Games:</h2>
+        <div class="game-box line-break">
           <div class="game-cover">
             <img class="box-cover" src="/images/labyrinth-cover.jpg">
             <p>Labyrinth</p>
           </div>
         </div>
 
-        <h2>Other Games:</h2>
-        <div id="other-games">
+        <h2 id="other-games">Other Games:</h2>
+        <div class="game-box">
           <div class="game-cover-wide">
-            <img class="box-cover" src="/images/root.jpg">
+            <a href="/root/main.html"><img class="box-cover-wide" src="/images/root.jpg"></a>
             <p>Root</p>
           </div>
-        <div class="other-games">
-          <div class="game-cover">
-            <img class="box-cover" src="/images/race-for-the -galaxy.jpg">
-            <p>Race for the Galaxy</p>
+          <div class="other-games">
+            <div class="game-cover">
+              <img class="box-cover" src="/images/race-for-the -galaxy.jpg">
+              <p>Race for the Galaxy</p>
+            </div>
           </div>
         </div>
-        </div>
-
-      </div>
+      </section>
     </article>
-  </div>
+  </main>
 
   <footer>
     <div class="banner-bottom">
@@ -118,5 +113,7 @@
     </div>
     <nav class="menu"></nav>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
