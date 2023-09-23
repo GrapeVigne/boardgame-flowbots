@@ -32,7 +32,3 @@ for (let i = 0; i < buttons.length; i++) {
     };
   });
 };
-
-window.onbeforeunload = function () {
-  history.scrollRestoration = 'manual';
-};

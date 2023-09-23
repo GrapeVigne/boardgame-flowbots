@@ -13,7 +13,7 @@
   </header>
 
   <main>
-    <div class="sidebar">
+    <nav class="sidebar">
       <h4 class="sidebar-heading">Menus links:</h4>
       <a class="sidebar-option" href="../index.html">Game Select Menu</a>
       <a class="sidebar-option" href="main.html">Colonial Twilight Menu</a>
@@ -26,19 +26,19 @@
       <h4 class="sidebar-heading">Other links:</h4>
       <a class="sidebar-option" href="https://www.gmtgames.com/p-548-colonial-twilight-the-french-algerian-war-1954-62.aspx" target="_blank" rel="noopener noreferrer nofollow">GMT Games</a>
       <a class="sidebar-option" href="https://boardgamegeek.com/boardgame/180199/colonial-twilight-french-algerian-war-1954-62" target="_blank" rel="noopener noreferrer nofollow">BoardGameGeek</a>
-    </div>
+    </nav>
 
-    <div class="container">
-      <h1>Click the appropriate response to progress:</h1>
-
-      <div id="Question1" class="show Question1">
-        <p>How many spaces are you selecting from?</p><br>
-        <button type="button" data-next="Question3">Two</button>
-        <button type="button" data-next="Question4">Three</button>
-        <button type="button" data-next="Question2">Other</button>
+    <section class="container">
+      <div class="intro-box">
+        <h1>How many spaces are you selecting from?</h1><br>
+        <div class="button-box-small">
+          <button type="button" data-next="Question3">Two</button>
+          <button type="button" data-next="Question4">Three</button>
+          <button type="button" data-next="Question2">More</button>
+        </div>
       </div>
 
-      <div id="Question3" class="hide">
+      <div id="Question3" class="hide response">
         <p>Decide which is your first and which is your second space choice.  Now roll a die.</p>
         <p>On the result of 1, 2 or 3 the first space is selecetd.</p>
         <p>On the result of 4, 5 or 6 the second space is selecetd.</p>
@@ -46,7 +46,7 @@
         <button class="js-button" type="button" onclick="location.reload();">Select Another</button>
       </div>
 
-      <div id="Question4" class="hide">
+      <div id="Question4" class="hide response">
         <p>Decide which is your first, which is your second, and which is your third space choice.  Now roll a die.</p>
         <p>On the result of 1 or 2 the first space is selecetd.</p>
         <p>On the result of 3 or 4 the second space is selecetd.</p>
@@ -55,7 +55,7 @@
         <button class="js-button" type="button" onclick="location.reload();">Select Another</button>
       </div>
 
-      <div id="Question2" class="hide">
+      <div id="Question2" class="hide response">
         <p>Has the <em>"Morocco and Tunisia Independent"</em> Pivotal Event already been played?</p><br>
         <button type="button" id="pivotal-played">Yes</button>
         <button type="button" id="pivotal-not-played">No</button>
@@ -72,7 +72,7 @@
       <div class="no-results-box">
         <div class="result-finished" id="result-finished"></div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="footer">

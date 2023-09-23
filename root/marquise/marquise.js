@@ -1,37 +1,3 @@
-let buttons = document.getElementsByTagName('button');
-let questions = document.getElementsByTagName('div');
-
-for (let i = 0; i < buttons.length; i++) {
-  let button = buttons[i];
-  button.addEventListener('click', function() {
-    if (button.classList.contains('special-button')) {  
-      let target = this.getAttribute('data-next');
-      for (let j = 0; j < questions.length; j++) {
-        let question = questions[j];
-        if (question.id == target) {
-          question.classList.add('show');
-        }
-      };
-
-      let height = document.body.scrollHeight;
-      window.scroll(0 , height);
-    }
-    else {
-      let target = this.getAttribute('data-next');
-      this.parentElement.classList.add('finished');
-      for (let j = 0; j < questions.length; j++) {
-        let question = questions[j];
-        if (question.id == target) {
-          question.classList.add('show');
-        }
-      };
-
-      let height = document.body.scrollHeight;
-      window.scroll(0 , height);
-    };
-  });
-};
-
 function showSetup(id) {
   for ( i = 1; i <= 5; i++) {
       let obj = document.getElementById('Setup' + i);
@@ -41,6 +7,9 @@ function showSetup(id) {
   let obj = document.getElementById('Setup' + id);      
   if (obj != null)
       obj.className = 'show response';
+
+  let height = document.body.scrollHeight;
+  window.scroll(0 , height);
 };
 
 function showTurn(id) {
@@ -52,6 +21,9 @@ function showTurn(id) {
   let obj = document.getElementById('Turn' + id);      
   if (obj != null)
       obj.className = 'show response';
+
+      let height = document.body.scrollHeight;
+      window.scroll(0 , height);
 };
 
 window.onbeforeunload = function () {

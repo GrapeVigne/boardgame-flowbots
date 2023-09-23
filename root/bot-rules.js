@@ -42,7 +42,7 @@ document.addEventListener('click', () => {
 });
 
 function showImg(id) {
-  for ( i = 1; i <= 4; i++) {
+  for (i = 0; i <= 4; i++) {
       let obj = document.getElementById('picture' + i);
       if (obj != null)
           obj.className = 'hide';
@@ -53,7 +53,8 @@ function showImg(id) {
 };
 
 function showAnswer(id) {
-  for ( i = 1; i <= 9; i++) {
+  for (i = 0; i < buttons.length; i++) {
+
       let obj = document.getElementById('Answer' + i);
       if (obj != null)
           obj.className = 'hide';

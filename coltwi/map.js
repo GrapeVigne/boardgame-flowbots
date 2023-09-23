@@ -55,6 +55,7 @@ function spacesFinished() {
   let resultFinished = `<p>There are no spaces remaining to choose from.</p><p>You can close this window, or click "Begin Again" to run through all the spaces again.</p><br><button class="js-button" type="button" onclick="location.reload();">Begin Again</button>
   `;
   document.querySelector('.result-finished').innerHTML = resultFinished;
+  document.querySelector('.no-results-box').classList.add('response');
   return;
 };
 
@@ -89,3 +90,4 @@ function getRandomSpaceIndependent() {
   document.querySelector('.result-picture').innerHTML = resultPicture;
   return;
 };
+

@@ -43,6 +43,12 @@ main {
 	display: flex;
 }
 
+.intro-box {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3%;
+}
+
 .text-box {
 	width: 60%;
 }
@@ -60,6 +66,11 @@ main {
 	display: flex;
 	justify-content: space-between;
 	padding: 3% 0.5% 0 0.5%;
+}
+
+.button-box-small {
+	display: flex;
+	justify-content: start;
 }
 
 .box-1,
@@ -131,6 +142,7 @@ button {
 	box-shadow: 0 8px 16px 0 lightgray, 0 6px 20px 0 grey;
 	cursor: pointer;
 	padding: 4px;
+	margin-right: 4px;
 }
 
 button:hover {
@@ -186,4 +198,10 @@ p {
 .clicked  {
 	background-color: rgb(150, 150, 150);
 	color: darkgray;
+}
+
+.response {
+	border: 1px solid black;
+	padding: 20px;
+	border-radius: 15px;
 }
