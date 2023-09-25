@@ -20,6 +20,18 @@ p {
 	font-size: 12px;
 }
 
+.game-box p {
+	text-align: center;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+section p {
+	font-size: 18px;
+	text-align: left;
+	padding: 5px;
+}
+
 .container {
   display: flex;
   column-gap: 32px;
@@ -52,9 +64,16 @@ h2 {
 
 main {
 	display: flex;
-	width: 95%;
+	width: 85%;
 	flex-direction: column;
   margin: 0 auto;
+}
+
+section {
+	display: flex;
+	padding: 30px;
+	text-align: center;
+	flex-wrap: wrap;
 }
 
 footer {
@@ -144,6 +163,27 @@ footer a:hover {
 	border-radius: 4px;
 }
 
+.content-box {
+	display: flex;
+}
+
+.text-box {
+	width: 70%;
+}
+
+.img-box {
+	display: flex;
+	width: 30%;
+	align-items: center;
+}
+
+.square-img {
+	width: 400px;
+  margin: 0 0 0 15px;
+	border-radius: 10px;
+	border: 2px solid darkgrey;
+}
+
 /*styling for dropdown menus*/
 ul {
   list-style: none;
@@ -154,13 +194,6 @@ a {
 	text-decoration: none;
 	margin: 4px 0;
 	color: rgb(60, 60, 60);
-}
-
-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  color: inherit;
 }
 
 .menu {
@@ -233,4 +266,7 @@ button {
   justify-content: space-between;
   gap: 2px;
   color: lightgrey;
+	border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
