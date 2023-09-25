@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Game Select</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>The FlowBot Project</title>
+  </head>
 
-<body>
-  <header>
-    <img class="banner-top" src="images/Flwbot.png" alt="The FlowBot Project header">
-    <h1>THE FLOWBOT PROJECT</h1>
-  </header>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="hero">
+          <img class="banner-top" src="images/Flwbot.png" alt="The FlowBot Project header">
+          <h1>THE FLOWBOT PROJECT</h1>
+        </nav>
 
-  <main>
-    <nav class="sidebar">
-      <h4>Select Game:</h4>
-      <a href="#coin-games">GMT COIN Games</a>
-      <a href="#other-gmt-games">Other GMT Games</a>
-      <a href="#other-games">Other Games</a><br>
-      <h4>Other Links:</h4>
-      <a href="https://www.gmtgames.com/" target="_blank" rel="noopener noreferrer nofollow">GMT Games</a>
-      <a href="https://https://ledergames.com/" target="_blank" rel="noopener noreferrer nofollow">Leder Games</a>
-      <a href="https://boardgamegeek.com/" target="_blank" rel="noopener noreferrer nofollow">BoardGameGeek</a><br>
-      <h4>FlowBot Project:</h4>
-      <a href="/about.html" target="_blank">About & Instructions</a>
-    </nav>
+        <nav class="nav-end">
+          <div class="right-container">
+            <ul class="menu-bar">
+              <li>
+                <button
+                  class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+                  Games
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown1" class="dropdown">
+                  <ul role="menu">
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#coin-games">GMT Coin Games</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#other-gmt-games">Other GMT Games</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#other-games">Other Games</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-    <article>
+
+              <li>
+                <button
+                  class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                  Links
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown2" class="dropdown">
+                  <ul role="menu">
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://www.gmtgames.com/" target="_blank" rel="noopener noreferrer nofollow">GMT Games</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://https://ledergames.com/" target="_blank" rel="noopener noreferrer nofollow">Leder Games</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="https://boardgamegeek.com/" target="_blank" rel="noopener noreferrer nofollow">Board Game Geek</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li><a class="nav-link" href="/about.html" target="_blank">About</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
       <section class="game-catagory"> 
         <h2 id="coin-games">COIN Games:</h2>
         <div class="game-box line-break">
@@ -44,8 +87,8 @@
             <p>The British Way</p>
           </div>
           <div class="game-cover">
-            <a href="/coltwi/main.html"><img class="box-cover" src="/images/colonial-twilight-cover.jpg"></a>
-            <p>Colonial Twilight</p>
+            <a href="/coltwi/main.html"><img class="box-cover" src="/images/colonial-twilight-cover.jpg"><p>Colonial Twilight</p></a>
+
           </div>
           <div class="game-cover">
             <img class="box-cover" src="/images/cuba-libre-cover.jpg">
@@ -92,8 +135,8 @@
         <h2 id="other-games">Other Games:</h2>
         <div class="game-box">
           <div class="game-cover-wide">
-            <a href="/root/main.html"><img class="box-cover-wide" src="/images/root.jpg"></a>
-            <p>Root</p>
+            <a href="/root/main.html"><img class="box-cover-wide" src="/images/root.jpg"><p>Root</p></a>
+
           </div>
           <div class="other-games">
             <div class="game-cover">
@@ -103,15 +146,16 @@
           </div>
         </div>
       </section>
-    </article>
-  </main>
-
-  <footer>
-    <div class="banner-bottom">
-      <p>The FlowBot Project is created and maintained by Max 'Grape' Vigne. It is a free software project.</p>
-      <p>The source code is available on <a href="github-link">GitHub</a>.</p>
-    </div>
-    <nav class="menu"></nav>
-  </footer>
-</body>
+    </main>
+  
+    <footer>
+      <div class="banner-bottom">
+        <p>The FlowBot Project is created and maintained by Max 'Grape' Vigne. It is a free software project.</p>
+        <p>The source code is available on <a href="github-link">GitHub</a>.</p>
+      </div>
+      <nav class="menu"></nav>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
 </html>
