@@ -4,42 +4,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <title>Law of Rootbotics</title>
 </head>
 
 <body>
   <header>
-    <img class="banner" src="images/root-alt-banner.jpg" alt="Root: A Game of Woodland Might and Right">
+    <div class="container">
+      <nav class="hero">
+        <img class="banner" src="images/root-banner.jpg" alt="Root: A Game of Woodland Might and Right">
+      </nav>
+
+      <nav class="nav-end">
+        <div class="right-container">
+          <ul class="menu-bar">
+            <li>
+              <button
+                class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+                Rules
+                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div id="dropdown1" class="dropdown">
+                <ul role="menu">
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="bot-rules.html">New Rules for Bots</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_of_Root_June_30_2023.pdf?v=1692479548" target="_blank" rel="noopener noreferrer nofollow">Law of Root</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Clockwork_Law_of_Rootbotics_web_Oct_15_2020.pdf?v=1603318377" target="_blank" rel="noopener noreferrer nofollow">Law of Rootbotics</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Learn_to_Play_web_Oct_15_2020.pdf?v=1603389572" target="_blank" rel="noopener noreferrer nofollow">Learn to Play</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Walking_Through_Root_web_Oct_15_2020.pdf?v=1603137225" target="_blank" rel="noopener noreferrer nofollow">Root Walkthrough</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="https://docs.google.com/document/d/1yBwLDRo0OuziCeRiX2SOpv63gH8_dmoCrGd8NyDuyC8/edit" target="_blank" rel="noopener noreferrer nofollow">Root Errata</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <button
+                class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                Links
+                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div id="dropdown2" class="dropdown">
+                <ul role="menu">
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="https://boardgamegeek.com/boardgame/237182/root" target="_blank" rel="noopener noreferrer nofollow">BGG - Root</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="https://boardgamegeek.com/boardgameexpansion/287220/root-clockwork-expansion" target="_blank" rel="noopener noreferrer nofollow">BGG - Clockwork</a>
+                  </li>      
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="https://ledergames.com/products/root-a-game-of-woodland-might-and-right" target="_blank" rel="noopener noreferrer nofollow">Leder Games</a>
+                  </li>            
+                </ul>
+              </div>
+            </li>
+                
+            <li><a class="nav-link" href="../index.html">Other Games</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   
   <main>
-    <nav class="sidebar">
-      <h4 class="sidebar-heading">Menus links:</h4>
-      <a class="sidebar-option" href="../index.html">Game Select Menu</a>
-      <a class="sidebar-option" href="bot-rules.html">Bot Specific Rules</a><br>
-
-      <h4 class="sidebar-heading">Rulebook links:</h4>
-      <a class="sidebar-option" href="https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_of_Root_June_30_2023.pdf?v=1692479548" target="_blank" rel="noopener noreferrer nofollow">Law of Root</a>
-      <a class="sidebar-option" href="https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Clockwork_Law_of_Rootbotics_web_Oct_15_2020.pdf?v=1603318377" target="_blank" rel="noopener noreferrer nofollow">Law of Rootbotics</a>
-      <a class="sidebar-option" href="https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Learn_to_Play_web_Oct_15_2020.pdf?v=1603389572" target="_blank" rel="noopener noreferrer nofollow">Learn to Play</a>
-      <a class="sidebar-option" href="https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Walking_Through_Root_web_Oct_15_2020.pdf?v=1603137225" target="_blank" rel="noopener noreferrer nofollow">Walkthrough</a>
-      <a class="sidebar-option" href="https://docs.google.com/document/d/1usz2D3BCurx2nKEOtDseCwNaFL7vOArvGHdrIt_KPio/edit?pli=1#heading=h.ajbz5613xi1a" target="_blank" rel="noopener noreferrer nofollow">Root FAQ</a>
-      <a class="sidebar-option" href="https://docs.google.com/document/d/1yBwLDRo0OuziCeRiX2SOpv63gH8_dmoCrGd8NyDuyC8/edit" target="_blank" rel="noopener noreferrer nofollow">Root Errata</a>
-      <br>
-
-      <h4 class="sidebar-heading">Other links:</h4>
-      <a class="sidebar-option" href="https://ledergames.com/products/root-a-game-of-woodland-might-and-right" target="_blank" rel="noopener noreferrer nofollow">Leder Games</a>
-      <a class="sidebar-option" href="https://boardgamegeek.com/boardgame/237182/root" target="_blank" rel="noopener noreferrer nofollow">BGG - Root</a>
-      <a class="sidebar-option" href="https://boardgamegeek.com/boardgameexpansion/287220/root-clockwork-expansion" target="_blank" rel="noopener noreferrer nofollow">BGG - Clockwork Expansion</a>
-    </nav>
-
     <article>
-      <section class="container">
+      <section class="main-container">
         <h1>The Law of Rootbotics... mechanised!</h1>
         
         <div class="content">
-          <div class="content-box">
+          <div class="text-box">
             <h3>About Root:</h3>
             <p>Root is a game of adventure and war where players battle for control of a vast wilderness.</p>
             <p>The nefarious Marquise de Cat has seized the great woodland, intent on harvesting its riches. Under her rule, the many creatures of the forest have banded together. This Alliance will seek to strengthen its resources and subvert the rule of Cats. In this effort, the Alliance may enlist the help of the wandering Vagabonds who are able to move through the more dangerous woodland paths. Though some may sympathize with the Alliance’s hopes and dreams, these wanderers are old enough to remember the great birds of prey who once controlled the woods.</p>
@@ -48,7 +92,7 @@
           </div>
           <img src="images/root-game.png">
         </div>
-        <div class="text-box">
+        <div>
           <h3>How to use this app:</h3>
           <p>This app is designed to take you through the decision making process for the Clockwork bots provided with the Clockwork expansion.  It does not automate the decisions, but will walk you through the setup and turns step-by-step.</p>
           <p>Choose the bot's faction you want to run from the options below.</p>
@@ -58,27 +102,29 @@
       <section class="main-nav">
         <div class="faction-div">
           <img class="faction" src="images/marquise.png">
-          <button onclick=location.href="marquise/marquise.html">Mechanical Marquise</button>
+          <button class="nav-button" onclick=location.href="marquise/marquise.html">Mechanical Marquise</button>
         </div>
         <div class="faction-div">
           <img class="faction" src="images/eyrie.png">
-          <button onclick=location.href="eyrie/eyrie.html">Electric Eyrie</button>
+          <button class="nav-button" onclick=location.href="eyrie/eyrie.html">Electric Eyrie</button>
         </div>
         <div class="faction-div">
           <img class="faction" src="images/alliance.png">
-          <button onclick=location.href="alliance/alliance.html">Automated Alliance</button>
+          <button class="nav-button" onclick=location.href="alliance/alliance.html">Automated Alliance</button>
         </div>
         <div class="faction-div">
           <img class="faction" src="images/vagabond.png">
-          <button onclick=location.href="vagabot/vagabot.html">Vagabot</button>
+          <button class="nav-button" onclick=location.href="vagabot/vagabot.html">Vagabot</button>
         </div>
       </section>
     </article>
   </main>
 
   <footer>
-    <img class="banner" src="images/root-alt-footer.jpg" alt="Root by Leder Games">
+    <img class="banner" src="images/root-footer.jpg" alt="Root by Leder Games">
   </footer>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
