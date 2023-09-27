@@ -20,7 +20,7 @@ body {
 
 /* styles for header area */
 .page-header {
-  background-color: aqua;
+  background-image: url(images/wallpaper-dark.jpg);
   min-height: 200px;
   display: flex;
   border: 2px solid black;
@@ -30,7 +30,6 @@ body {
   width: 80%;
   display: flex;
   align-items: center;
-  background-color: lightblue;
 }
 
 .header-image {
@@ -59,66 +58,87 @@ main {
 }
 
 .content {
-	background-color: rgb(200, 200, 200);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90%;
   height: auto;
-  border: 2px solid black;
-  border-radius: 20px;
-  margin: 2%;
+  margin-top: 3%;
 }
 
 .section-content {
   display: flex;
   flex-direction: column;
   height: auto;
-  width: 95%;
-	background-color: rgb(200, 200, 200);
+  padding: 0 5% 2% 5%;
+}
+
+.content-box-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 0;
 }
 
 .content-box {
   display: flex;
-  align-items: center;
-  height: 50%;
-  width: 95%;
-  margin: 2%;
-	background-color: lightsalmon;
 }
 
 .text-box {
-  background-color: lightgreen;
-  height: 95%;
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-direction: column;
+  margin: 0 1% 0 2%;
 }
 
 .big-text-box {
-  background-color: lightgreen;
-  height: 500px
   display: flex;
   flex-direction: column;
+  margin: 0 2%;
+}
+
+.text-box p,
+.big-text-box p {
+  padding: 1% 0;
 }
 
 .image-box {
-  background-color: lightyellow;
-  height: 95%;
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 1% 2% 1% 1%;
+}
+
+.image-box:hover img {
+  z-index: 2;
+  transform: scale(2.25);
+  margin-right: 150px;
+}
+
+.square-img {
+	max-width: 380px;
+	border-radius: 10px;
+	border: 2px solid darkgrey;
 }
 
 /* styles for footer area */
-.page-footer {
+.footer-text {
   min-height: 100px;
 	display: flex;
   flex-direction: column;
 	justify-content: center;
 	align-items: center;
   text-align: center;
-	background-color: rgb(130, 130, 130);
+  background-image: url(images/wallpaper-dark.jpg);
   border: 2px solid black;
+}
+
+footer p,
+footer a {
+  color: lightgray;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: lightgray;
+  font-size: 0.9rem;
+	color: #2b72fb;
 }
