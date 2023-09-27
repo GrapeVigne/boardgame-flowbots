@@ -2,23 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
   <title>The FlowBot Project</title>
 </head>
-
 <body>
   <header>
-    <div class="container">
-      <div class="wrapper">
-        <nav>
+    <section class="page-header">
+      <nav class="menu">
+        <div class="wrapper">
           <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
           <label class="m-menu__toggle" for="menu">
             <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
           </label>
-          <span>MENU</span>
           <label class="m-menu__overlay" for="menu"></label>
         
           <div class="m-menu">
@@ -74,97 +70,110 @@
               <li><a class="nav-link" href="/about.html" target="_blank">About</a></li>
             </ul>  
           </div>
-        </nav>
+        </div>
+      </nav>
+      <div class="page-title">
+        <h1>THE FLOWBOT PROJECT</h1>
       </div>
-      <div class="hero">
-        <h1 class="text-right">THE FLOWBOT PROJECT</h1>
+      <figure class="header-image">
         <img class="banner-top" src="images/Flwbot.png" alt="The FlowBot Project header">
-      </div>
-    </div>
+      </figure>
+    </section>  
   </header>
 
   <main>
-    <section class="game-catagory"> 
-      <h2 id="coin-games">COIN Games:</h2>
-      <div class="game-box line-break">
-        <div class="game-cover">
-          <img class="box-cover" src="/images/all-bridges-cover.jpg">
-          <p>All Bridges Burning</p>
+    <article class="content">
+      <section class="content-box" id="Section1">
+        <div class="box-heading">
+          <h2 id="coin-games">COIN Games</h2>
         </div>
-        <div class="game-cover">
-          <img class="box-cover" src="/images/andean-abyss-cover.jpg">
-          <p>Andean Abyss</p>
+        <div class="image-box">
+          <div class="game-box" id="box-cover101">
+            <img class="box-cover" src="/images/all-bridges-cover.jpg">
+            <p>All Bridges Burning</p>
+          </div>
+          <div class="game-box" id="box-cover102">
+            <img class="box-cover" src="/images/andean-abyss-cover.jpg">
+            <p>Andean Abyss</p>
+          </div>
+          <div class="game-box" id="box-cover103">
+            <img class="box-cover" src="/images/british-way-cover.jpg">
+            <p>The British Way</p>
+          </div>
+          <div class="game-box" id="box-cover104">
+            <a href="/coltwi/main.html"><img class="box-cover" src="/images/colonial-twilight-cover.jpg"><p>Colonial Twilight</p></a>
+          </div>
+          <div class="game-box" id="box-cover105">
+            <img class="box-cover" src="/images/cuba-libre-cover.jpg">
+            <p>Cuba Libre</p>
+          </div>
+          <div class="game-box" id="box-cover106">
+            <img class="box-cover" src="/images/distant-plain-cover.jpg">
+            <p>A Distant Plain</p>
+          </div>
+          <div class="game-box" id="box-cover107">
+            <img class="box-cover" src="/images/falling-sky-cover.jpg">
+            <p>Falling Sky</p>
+          </div>
+          <div class="game-box" id="box-cover108">
+            <img class="box-cover" src="/images/fitl-cover.jpg">
+            <p>Fire in the Lake</p>
+          </div>
+          <div class="game-box" id="box-cover109">
+              <img class="box-cover" src="/images/gandhi-cover.jpg">
+              <p>Gandhi</p>
+          </div>
+          <div class="game-box" id="box-cover110">
+              <img class="box-cover" src="/images/liberty-cover.jpg">
+              <p>Liberty or Death</p>
+          </div>
+          <div class="game-box" id="box-cover111">
+            <img class="box-cover" src="/images/pendragon-cover.jpg">
+            <p>Pendragon</p>
+          </div>
+          <div class="game-box" id="box-cover112">
+            <img class="box-cover" src="/images/people-power-cover.jpg">
+            <p>People Power</p>
+          </div>
         </div>
-        <div class="game-cover">
-          <img class="box-cover" src="/images/british-way-cover.jpg">
-          <p>The British Way</p>
-        </div>
-        <div class="game-cover">
-          <a href="/coltwi/main.html"><img class="box-cover" src="/images/colonial-twilight-cover.jpg"><p>Colonial Twilight</p></a>
-        </div>
-        <div class="game-cover">
-          <img class="box-cover" src="/images/cuba-libre-cover.jpg">
-          <p>Cuba Libre</p>
-        </div>
-        <div class="game-cover">
-          <img class="box-cover" src="/images/distant-plain-cover.jpg">
-          <p>A Distant Plain</p>
-        </div>
-        <div class="game-cover">
-          <img class="box-cover" src="/images/falling-sky-cover.jpg">
-          <p>Falling Sky</p>
-        </div>
-        <div class="game-cover">
-          <img class="box-cover" src="/images/fitl-cover.jpg">
-          <p>Fire in the Lake</p>
-        </div>
-        <div class="game-cover">
-          <img class="box-cover" src="/images/gandhi-cover.jpg">
-          <p>Gandhi</p>
-        </div>
-        <div class="game-cover">
-          <img class="box-cover" src="/images/liberty-cover.jpg">
-          <p>Liberty or Death</p>
-        </div>
-        <div class="game-cover">
-          <img class="box-cover" src="/images/pendragon-cover.jpg">
-          <p>Pendragon</p>
-        </div>
-        <div class="game-cover">
-          <img class="box-cover" src="/images/people-power-cover.jpg">
-          <p>People Power</p>
-        </div>
-      </div>
+      </section>
 
-      <h2 id="other-gmt-games">Other GMT Games:</h2>
-      <div class="game-box line-break">
-        <div class="game-cover">
-          <img class="box-cover" src="/images/labyrinth-cover.jpg">
-          <p>Labyrinth</p>
+      <section class="content-box" id="Section2">
+        <div class="box-heading">
+          <h2 id="other-gmt-games">Other GMT Games</h2>
         </div>
-      </div>
-
-      <h2 id="other-games">Other Games:</h2>
-      <div class="game-box">
-        <div class="game-cover-wide">
-          <a href="/root/main.html"><img class="box-cover-wide" src="/images/root.jpg"><p>Root</p></a>
-
+        <div class="image-box">
+          <div class="game-box" id="box-cover201">
+            <img class="box-cover" src="/images/labyrinth-cover.jpg">
+            <p>Labyrinth</p>
+          </div>
         </div>
-        <div class="other-games">
-          <div class="game-cover">
+      </section>
+
+      <section class="content-box" id="Section3">
+        <div class="box-heading">
+          <h2 id="other-games">Other Games</h2>
+        </div>
+        <div class="image-box">
+          <div class="game-box-wide" id="box-cover301">
+            <a href="/root/main.html"><img class="box-cover-wide" src="/images/root.jpg"><p>Root</p></a>
+          </div>
+          <div class="game-box" id="box-cover302">
             <img class="box-cover" src="/images/race-for-the -galaxy.jpg">
             <p>Race for the Galaxy</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </article>
   </main>
 
   <footer>
-    <div class="banner-bottom">
-      <p>The FlowBot Project is created and maintained by Max 'Grape' Vigne. It is a free software project.</p>
-      <p>The source code is available on <a href="github-link">GitHub</a>.</p>
-    </div>
+      <div class="footer-text">
+        <p>The FlowBot Project is created and maintained by Max 'Grape' Vigne. It is a free software project.</p><br>
+        <p>The source code is available on <a href="github-link">GitHub</a>.</p>
+      </div>
   </footer>
+
+  <script src="template1.js"></script>
 </body>
 </html>

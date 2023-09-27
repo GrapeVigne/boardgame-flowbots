@@ -1,15 +1,21 @@
-body {
-  background-color: whitesmoke;
+* {
   margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: whitesmoke;
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 18px;
 }
 
 header {
 	display: flex;
-	justify-content: space-around;
 	background-image: url(images/wallpaper-dark.jpg);
 	padding: 2% 0;
 	border: 1px grey solid;
@@ -45,13 +51,13 @@ section p {
 
 .container {
   display: flex;
-  height: 200px;
+  justify-content: space-around;
+  height: 165px;
   padding: 0 3%;
 }
 
 .hero {
   display: flex;
-  align-content: center;
 }
 
 .banner-top {
@@ -59,6 +65,21 @@ section p {
 	border: 2px solid;
 	border-radius: 100px;
 	margin-left: 2%;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.heading {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.logo {
+  margin-left: 3%;
 }
 
 h1 {
@@ -353,6 +374,7 @@ nav .m-menu__checkbox:checked ~ .m-menu {
   overflow: hidden;
   background-color: transparent;
   position: relative;
+  display: flex;
 }
 
 span {

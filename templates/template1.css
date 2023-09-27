@@ -1,0 +1,87 @@
+/* styles for whole page */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* styles for body */
+body {
+  background-color: whitesmoke;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+}
+
+/* styles for elements */
+
+/* styles for header area */
+.page-header {
+  background-color: darkgrey;
+  min-height: 200px;
+  display: flex;
+  border: 2px solid black;
+}
+
+.menu {
+  width: 5%;
+  background-color: aqua;
+}
+
+.page-title {
+  width: 75%;
+  background-color: lightcoral;
+}
+
+.header-image {
+  width: 20%;
+  background-color: yellowgreen;
+}
+
+/* styles for main area */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  margin: 5%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 1000px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 95%;
+  padding: 2%;
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+/* styles for footer area */
+.page-footer {
+  min-height: 150px;
+  background-color: lightsalmon;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.footer-image {
+  width: 20%;
+  background-color: yellowgreen;
+}
