@@ -3,82 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main-old.css">
+  <link rel="stylesheet" href="map.css">
   <script src="map.js" defer></script>
-  <title>Choose a Map Space</title>
+  <title>Map Space Selector</title>
 </head>
 
 <body>
-  <header class="header">
-    <img src="images/header_mini.jpg" alt="Colonial Twilight - The French-Algerian War, 1954-1962">
-  </header>
+  <header>
+    <section class="page-header">
+      <label class="hamburger-menu">
+        <input type="checkbox" />
+      </label>
+      <nav class="sidebar">
+        <div>
+          <li class="parent">
+            <a href="#">Rules</a>
+            <ul class="child">
+              <li><a href="https://s3-us-west-2.amazonaws.com/gmtwebsiteassets/colonialtwilight/ColTwi-RULES-LR-May2018.pdf" target="_blank" rel="noopener noreferrer nofollow">Living Rulebook</a></li>
+              <li><a href="https://s3-us-west-2.amazonaws.com/gmtwebsiteassets/colonialtwilight/ColTwi-PLAYBOOK-Oct2018.pdf" target="_blank" rel="noopener noreferrer nofollow">Living Playbook</a></li>
+            </ul>
+          </li>
+        </div>
+  
+        <div>
+          <li class="parent">
+            <a href="#">Links</a>
+            <ul class="child">
+              <li><a href="https://www.gmtgames.com/p-548-colonial-twilight-the-french-algerian-war-1954-62.aspx" target="_blank" rel="noopener noreferrer nofollow">GMT Games</a></li>
+              <li><a href="https://boardgamegeek.com/boardgame/180199/colonial-twilight-french-algerian-war-1954-62" target="_blank" rel="noopener noreferrer nofollow">BoardGameGeek</a></li>
+            </ul>
+        </li></div>
+  
+        <div>
+          <li class="parent">
+            <a class="direct-link" href="/about.html" target="_blank">Game Select</a>
+          </li>
+        </div>
+      </nav>
+      </figure>
+    </section>  
+  </header> 
 
   <main>
-    <nav class="sidebar">
-      <h4 class="sidebar-heading">Menus links:</h4>
-      <a class="sidebar-option" href="../index.html">Game Select Menu</a>
-      <a class="sidebar-option" href="main.html">Colonial Twilight Menu</a>
-      <a class="sidebar-option" href="fln_prop.html">Propaganda Round</a><br>
+    <article class="content">
+      <section class="section-content">
+        <h1>Selecting a Random Space</h1>
+        <div class="content-box">
+          <div class="lead-box">
+            <div class="section-heading">
+              <h2>Two spaces:</h2>
+            </div>
+            <p>Decide which is your first and which is your second space choice.  Now roll a die.</p>
+            <li>On the result of 1, 2 or 3 the first space is selected.</li>
+            <li>On the result of 4, 5 or 6 the second space is selected.</li>
+          </div>
 
-      <h4 class="sidebar-heading">Rulebook links:</h4>
-      <a class="sidebar-option" href="https://s3-us-west-2.amazonaws.com/gmtwebsiteassets/colonialtwilight/ColTwi-RULES-LR-May2018.pdf" target="_blank" rel="noopener noreferrer nofollow">Living Rulebook</a>
-      <a class="sidebar-option" href="https://s3-us-west-2.amazonaws.com/gmtwebsiteassets/colonialtwilight/ColTwi-PLAYBOOK-Oct2018.pdf" target="_blank" rel="noopener noreferrer nofollow">Living Playbook</a><br>
+          <div class="lead-box">
+            <div class="section-heading">
+              <h2>Three spaces:</h2>
+            </div>
+            <p>Decide which is your first, which is your second, and which is your third space choice.  Now roll a die.</p>
+            <li>On the result of 1 or 2 the first space is selected.</li>
+            <li>On the result of 3 or 4 the second space is selected.</li>
+            <li>On the result of 5 or 6 the third space is selected.</li>
+          </div>
 
-      <h4 class="sidebar-heading">Other links:</h4>
-      <a class="sidebar-option" href="https://www.gmtgames.com/p-548-colonial-twilight-the-french-algerian-war-1954-62.aspx" target="_blank" rel="noopener noreferrer nofollow">GMT Games</a>
-      <a class="sidebar-option" href="https://boardgamegeek.com/boardgame/180199/colonial-twilight-french-algerian-war-1954-62" target="_blank" rel="noopener noreferrer nofollow">BoardGameGeek</a>
-    </nav>
-
-    <section class="container">
-      <div class="intro-box">
-        <h1>How many spaces are you selecting from?</h1><br>
-        <div class="button-box-small">
-          <button type="button" data-next="Question3">Two</button>
-          <button type="button" data-next="Question4">Three</button>
-          <button type="button" data-next="Question2">More</button>
+          <div class="lead-box">
+            <div class="section-heading">
+              <h2>Multiple spaces:</h2>
+            </div>
+            <p>If you need to select randomly from several spaces on the map, then click the "Select" button below.</p><br>
+            <button type="button" data-next="Question2" style="box-shadow: rgba(0, 0, 0, 0.13) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.11) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">Select</button>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div id="Question3" class="hide response">
-        <p>Decide which is your first and which is your second space choice.  Now roll a die.</p>
-        <p>On the result of 1, 2 or 3 the first space is selecetd.</p>
-        <p>On the result of 4, 5 or 6 the second space is selecetd.</p>
-        <p>Click "Select Another" if you need another random space, or you may close this window.</p><br>
-        <button class="js-button" type="button" onclick="location.reload();">Select Another</button>
-      </div>
-
-      <div id="Question4" class="hide response">
-        <p>Decide which is your first, which is your second, and which is your third space choice.  Now roll a die.</p>
-        <p>On the result of 1 or 2 the first space is selecetd.</p>
-        <p>On the result of 3 or 4 the second space is selecetd.</p>
-        <p>On the result of 5 or 6 the third space is selecetd.</p>
-        <p>Click "Select Another" if you need another random space, or you may close this window.</p><br>
-        <button class="js-button" type="button" onclick="location.reload();">Select Another</button>
-      </div>
-
-      <div id="Question2" class="hide response">
-        <p>Has the <em>"Morocco and Tunisia Independent"</em> Pivotal Event already been played?</p><br>
-        <button type="button" id="pivotal-played">Yes</button>
-        <button type="button" id="pivotal-not-played">No</button>
-      </div>
-
-      <div class="results-box">
-        <div class="result">
-          <div class="result-text" id="hide-text"></div>
-          <div class="result-button" id="hide-button"></div>
+      <section class="section-content">
+        <div id="Question2" class="hide">
+          <p>Has the <em>"Morocco and Tunisia Independent"</em> Pivotal Event already been played?</p><br>
+          <button type="button" id="pivotal-played">Yes</button>
+          <button type="button" id="pivotal-not-played">No</button>
         </div>
-        <div class="result-picture" id="hide-picture"></div>
-      </div>
-      
-      <div class="no-results-box">
-        <div class="result-finished" id="result-finished"></div>
-      </div>
-    </section>
+  
+        <div class="results-box">
+          <div class="result">
+            <div class="result-text" id="hide-text"></div>
+            <div class="result-button" id="hide-button"></div>
+          </div>
+          <div class="result-picture" id="hide-picture"></div>
+        </div>
+        
+        <div class="no-results-box">
+          <div class="result-finished" id="result-finished"></div>
+        </div>
+      </section>
+    </article>
   </main>
 
-  <footer class="footer">
-    <img src="images/footer.jpg" alt="Designed by Brian Train, copyright GMT Games, 2017">
-  </footer>
+  <footer>
+    <div class="footer">
+      <img src="images/footer.jpg" alt="Game designed by Brian Train, published by GMT Games">
+    </div>
+</footer>
 </body>
-
 </html>

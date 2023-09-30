@@ -19,7 +19,6 @@ for (let i = 0; i < buttons.length; i++) {
   });
 };
 
-
 const spacesIndependent = ['Tunisia', 'Morocco', 'Mecheria', 'Oran', 'Tlemcen', 'Sidi Bel Abbes', 'Mostaganem', 'Saida', 'Mascara', 'Tiaret', 'Orleansville', 'Ain Sefra', 'Laghouat', 'Algiers', 'Sidi Aissa', 'Ain Oussera', 'Medea', 'Bordj Bou Arreridj', 'Biskra', 'Bougie', 'Setif', 'Barika', 'Constantine', 'Batna', 'Oum El Bouaghi', 'Philippeville', 'Negrine', 'Tebessa', 'Souk Ahras']; //Pivotal event in effect, include Morocco and Tunisia
 
 const spacesNotIndependent = spacesIndependent.slice(2); //Pivotal event not yet played, exclude Morocco and Tunisia
@@ -65,7 +64,7 @@ function getRandomSpaceNotIndependent() {
   let resultPicture = '';
   let chosenSpace = chooseRandom(spacesNotIndependent);
   resultText = `<p>Does ${chosenSpace} qualify?</p><br>`
-  resultButton = `<button type='button' class='js-button' onclick='javascript:window.close()'>Yes - Close Window</button><button type='button' class='js-button' onclick='getRandomSpaceNotIndependent();'>No - Select Another</button>`;
+  resultButton = `<button type='button' class='js-button' onclick='javascript:window.close()'>Yes - Finished</button><button class="js-button" type="button" onclick="location.reload();">Yes - Select Another</button><button type='button' class='js-button' onclick='getRandomSpaceNotIndependent();'>No - Select Another</button>`;
   resultPicture = `<img src="images/${chosenSpace}.jpg">`
   document.querySelector('.result-text').innerHTML = resultText;
   document.querySelector('.result-button').innerHTML = resultButton;
@@ -83,11 +82,10 @@ function getRandomSpaceIndependent() {
   let resultPicture = '';
   let chosenSpace = chooseRandom(spacesIndependent);
   resultText = `<p>Does ${chosenSpace} qualify?</p><br>`
-  resultButton = `<br><button type='button' class='js-button'  onclick='javascript:window.close()'>Yes - Close Window</button><button type='button' class='js-button' onclick='getRandomSpaceIndependent();'>No - Select Another</button>`;
+  resultButton = `<br><button type='button' class='js-button' onclick='javascript:window.close()'>Yes - Finished</button><button class="js-button" type="button" onclick="location.reload();">Yes - Select Another</button><button type='button' class='js-button' onclick='getRandomSpaceIndependent();'>No - Select Another</button>`;
   resultPicture = `<img src="images/${chosenSpace}.jpg">`
   document.querySelector('.result-text').innerHTML = resultText;
   document.querySelector('.result-button').innerHTML = resultButton;
   document.querySelector('.result-picture').innerHTML = resultPicture;
   return;
 };
-

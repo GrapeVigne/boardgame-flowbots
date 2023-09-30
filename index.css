@@ -9,6 +9,16 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --bar-width: 40px;
+  --bar-height: 6px;
+  --hamburger-gap: 4px;
+  --foreground: lightgrey;
+  --hamburger-margin: 8px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
 /* styles for body */
 body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -180,17 +190,6 @@ footer a:hover {
 }
 
 /* styles for hamburger menu */
-:root {
-  --bar-width: 40px;
-  --bar-height: 6px;
-  --hamburger-gap: 4px;
-  --foreground: lightgrey;
-  --background: white;
-  --hamburger-margin: 8px;
-  --animation-timing: 200ms ease-in-out;
-  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-}
-
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
   display: flex;
@@ -206,13 +205,11 @@ footer a:hover {
 
 .hamburger-menu:has(input:checked) {
   --foreground: rgb(50,50,50);
-  --background: #333;
 }
 
 .hamburger-menu:has(input:focus-visible)::before,
 .hamburger-menu:has(input:focus-visible)::after,
 .hamburger-menu input:focus-visible {
-  border: 1px solid var(--background);
   box-shadow: 0 0 0 1px var(--foreground);
 }
 
@@ -266,7 +263,7 @@ footer a:hover {
 	position: relative;
 	float: left;
 	line-height: 1.875rem;
-	background-color: lightgrey;
+	background-color: var(--foreground);
 }
 
 .sidebar {
@@ -300,7 +297,7 @@ footer a:hover {
 }
 
 .child li {
-	background-color: lightgrey;
+	background-color: var(--foreground);
 	line-height: 1.875rem;
 	width: 100%;
 }
@@ -317,7 +314,7 @@ ul {
 }
 
 li:hover {
-	background-color: lightgrey;
+	background-color: var(--foreground);
 }
 
 .child li a:hover {

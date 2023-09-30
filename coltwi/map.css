@@ -22,6 +22,10 @@ h1 {
   margin-bottom: 2%;
 }
 
+h2 {
+  margin-bottom: 1%;
+}
+
 /* styles for header */
 .page-header {
   background-image: url(images/header.jpg);
@@ -34,7 +38,9 @@ h1 {
 /* styles for main content */
 .content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .section-content {
@@ -47,66 +53,59 @@ h1 {
 
 .content-box {
   display: flex;
+  justify-content: space-between;
 }
 
-.text-box {
+.lead-box {
   display: flex;
   flex-direction: column;
   padding: 2%;
-  width: 60%;
-}
-
-.column-box {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding: 2%;
-  margin-right: 3%;
+  width: 30%;
+  margin: 0 1%;
+  border: 2px solid rgb(50,50,50);
+  border-radius: 10px;
+  background-color: rgb(200, 250, 195);
 }
 
 .section-heading {
   padding-bottom: 2%;
 }
 
-.text-box p,
-.column-box p {
+.lead-box p {
   margin-bottom: 1%;
 }
 
-.image-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-}
-
-.image-box img {
-  width: 90%;
-  border: 2px solid rgb(50, 50, 50);
-  border-radius: 0.5rem;
-  box-shadow: 0 8px 16px 0 lightgray, 0 6px 20px 0 grey;
-}
-
-.button-box {
-  display: flex;
-  justify-content: space-between;
-}
-
-.rules-box {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding: 2%;
-  margin-left: 3%;
-  background-color: rgb(200, 250, 160);
-  border: 2px solid rgb(50, 50, 50);
-  border-radius: 10px;
-  box-shadow: 0 8px 16px 0 lightgray, 0 6px 20px 0 grey;
-}
-
-.rules-box li {
+.lead-box li {
   padding: 0.5% 0;
   margin-left: 3.5%;
+}
+
+.response {
+	border: 1px solid black;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+.result-picture img {
+	margin-bottom: 20px;
+	width: 80%;
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+	min-width: 30%;
+	margin-right: 5%;
+}
+
+.results-box {
+	display: flex;
+  min-width: 100%;
+}
+
+.result-button {
+  display: flex;
+  flex-direction: column;
 }
 
 /* styles for footer */
@@ -121,7 +120,6 @@ h1 {
 .footer img {
   height: 100%;
   width: auto;
-
 }
 
 /* styles for hamburger menu */
@@ -300,4 +298,26 @@ button:hover {
 	background-color: rgb(170,160,150);
 	border: 2px solid black;
 	transform: scale(1.1);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+	margin-bottom: 50px;
+}
+
+.js-button {
+	margin-bottom: 15px;
+}
+
+.finished {
+	pointer-events: none;
+}
+
+.clicked  {
+	background-color: rgb(150, 150, 150);
+	color: darkgray;
 }
