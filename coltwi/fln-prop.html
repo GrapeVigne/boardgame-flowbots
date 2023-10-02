@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fln-prop.css">
+  <script src="subvert.js" defer></script>
+  <title>Propaganda Round</title>
+</head>
+
+<body>
+  <header>
+    <section class="page-header">
+      <label class="hamburger-menu">
+        <input type="checkbox" />
+      </label>
+      <nav class="sidebar">
+        <div>
+          <li class="parent">
+            <a href="#">Rules</a>
+            <ul class="child">
+              <li><a href="https://s3-us-west-2.amazonaws.com/gmtwebsiteassets/colonialtwilight/ColTwi-RULES-LR-May2018.pdf" target="_blank" rel="noopener noreferrer nofollow">Living Rulebook</a></li>
+              <li><a href="https://s3-us-west-2.amazonaws.com/gmtwebsiteassets/colonialtwilight/ColTwi-PLAYBOOK-Oct2018.pdf" target="_blank" rel="noopener noreferrer nofollow">Living Playbook</a></li>
+            </ul>
+          </li>
+        </div>
+  
+        <div>
+          <li class="parent">
+            <a href="#">Links</a>
+            <ul class="child">
+              <li><a href="https://www.gmtgames.com/p-548-colonial-twilight-the-french-algerian-war-1954-62.aspx" target="_blank" rel="noopener noreferrer nofollow">GMT Games</a></li>
+              <li><a href="https://boardgamegeek.com/boardgame/180199/colonial-twilight-french-algerian-war-1954-62" target="_blank" rel="noopener noreferrer nofollow">BoardGameGeek</a></li>
+            </ul>
+        </li></div>
+  
+        <div>
+          <li class="parent">
+            <a class="direct-link" href="/about.html" target="_blank">Game Select</a>
+          </li>
+        </div>
+      </nav>
+      </figure>
+    </section>  
+  </header> 
+
+  <main>
+    <article class="content">
+      <section class="section-content">
+        <div class="content-box">
+          <div class="rules-box">
+            <div class="section-heading">
+              <h1>Propaganda Round:</h1>
+            </div>
+            <ul>
+              <li>Never conduct more than one Propaganda Round in a row (without at least one Event card in-between).</li>
+              <li>Do not conduct a Victory Phase on the first Propaganda Round.</li>
+              <li>A one-player game ends during a Propaganda Round Victory Phase only if the Non-Player Faction has a positive victory margin.</li>
+              <li>In order to win, the player must avoid that situation through each Propaganda Round and have the higher margin after the final Round.</li>
+            </ul>
+          </div>
+          <figure class="image-box">
+            <img src="images/propaganda-card.jpg">
+          </figure>
+        </div>
+
+        <div class="column-box">
+          <h1>Select the appropriate response to progress:</h1>
+          <div id="Question1" class="show response">
+            <p>Check if the FLN has a positive victory margin.  If so, the FLN has won the game.</p>
+            <p>If the FLN has not won, click "Continue" to proceed with the rest of the Propaganda round.</p><br>
+            <button type="button" onclick="showAnswer(2);">Continue</button>
+          </div>
+
+          <div id="Question2" class="hide">
+            <p>Hes the <em>"Recall De Gaulle</em> Pivotal Event been played already?</p><br>
+            <button type="button" onclick="showAnswer(3);">Yes</button>
+            <button type="button" onclick="showAnswer(4);">No</button>
+          </div>
+
+          <div id="Question3" class="hide">
+            <p>First add to Government Resources the following:</p>
+            <ol>
+              <li>The current Commitment Level.</li>
+              <li>Resources equal to the Population of the Sector <strong>(not City)</strong> with <strong>Government Control</strong> and at least one <strong>Government Base</strong>.</li>
+              <li>Total Support.</li>
+              <li><strong>Subtract</strong> The number of Resettled Sectors.</li>
+            </ol><br>
+            <p>Is this the final Propaganda card?</p><br>
+            <button type="button" onclick="showAnswer(5);">Yes</button>
+            <button type="button" onclick="showAnswer(7);">No</button>
+          </div>
+
+          <div id="Question4" class="hide">
+            <p>First add to Government Resources the following:</p>
+            <ol>
+              <li>The current Commitment Level.</li>
+              <li>Resources equal to the Population of the Sector <strong>(not City)</strong> with <strong>Government Control</strong> and at least one <strong>Government Base</strong>.</li>
+              <li>The number of French pieces in the Available box.</li>
+              <li><strong>Subtract</strong> The number of Resettled Sectors.</li>
+            </ol><br>
+            <p>Is this the final Propaganda card?</p><br>
+            <button type="button" onclick="showAnswer(5);">Yes</button>
+            <button type="button" onclick="showAnswer(7);">No</button>
+          </div>
+
+          <div id="Question5" class="hide">
+            <p>You may now spend Resources on Pacification as follows:</p>
+            <p>Expend Resources to build Support in any space with <strong>Government Control</strong> <u>and</u> <strong>Troops</strong> <u>and</u> <strong>Police</strong>.</p>
+            <p>Every two Resources spent removes a Terror marker. Once no Terror is in a space every two Resources spent shifts the space one level toward Support, to a maximum of two levels per space.</p>
+            <p>The Government may not spend more Resources in this Phase than the current Commitment Level.</p><br>
+            <button type="button" onclick="showAnswer(6);">Continue</button>
+          </div>
+
+          <div id="Question6" class="hide">
+            <p>The FLN will now spend Resources to build Opposition in any spaces with FLN pieces and no Government Control.</p>
+            <p>Every one Resource expended removes a Terror marker. Once no Terror is in a space, every one Resource expended shifts the space one level toward Opposition, to a maximum of two levels per space.</p>
+            <p>The FLN will conduct all Agitation they can.</p><br>
+            <button type="button" onclick="showAnswer(14);">Continue</button>
+          </div>
+
+          <div id="Question7" class="hide">
+            <p>You may now spend Resources on Pacification as follows:</p>
+            <p>Expend Resources to build Support in any space with <strong>Government Control</strong> <u>and</u> <strong>Troops</strong> <u>and</u> <strong>Police</strong>.</p>
+            <p>Every two Resources spent removes a Terror marker. Once no Terror is in a space every two Resources spent shifts the space one level toward Support, to a maximum of two levels per space.</p>
+            <p>The Government may not spend more Resources in this Phase than the current Commitment Level.</p><br>
+            <button type="button" onclick="showAnswer(8);">Continue</button>
+          </div>
+
+          <div id="Question8" class="hide">
+            <p>The FLN will now spend Resources to Agitage and build Opposition in any spaces with FLN pieces and no Government Control.</p>
+            <p>Every one Resource expended removes a Terror marker. Once no Terror is in a space, every one Resource expended shifts the space one level toward Opposition, to a maximum of two levels per space.</p><br>
+            <p>The FLN will expend up to two-thirds (rounded down) of its Resources to Agitate in the following order of preference:
+            <ol>
+              <li>First for the greatest shift</li>
+              <li>Then where there is Support</li>
+              <li>Then where fewest Terror markers</li>
+              <li>Then randomly.</li>
+            </ol>
+            <p>Remove Terror only if a shift would be achieved.</p><br>
+            <button type="button" onclick="showAnswer(9);">Continue</button>
+          </div>
+
+          <div id="Question9" class="hide">
+            <p>The Government player may move any Troops on the map to any Cities or spaces with friendly Bases.</p>
+            <p>Any Police on the map may move to any Government Controlled spaces.</p><br>
+            <button type="button" onclick="showAnswer(10);">Continue</button>
+          </div>
+
+          <div id="Question10" class="hide">
+            <p>The FLN player will now move Guerrillas between spaces within a the same Wilaya with an FLN Base.</p>
+            <p>The FLN will <strong>never</strong> Redeploy the last Guerrilla from a <strong>Support</strong> or <strong>City</strong> space.</p><br>
+            <p>It will prioritise this as follows:</p>
+            <p>1. Redeploy to get at least the Population Value plus 1 Guerrillas in each Base space, but having no more than three Guerrillas per space with a Base.</p>
+            <p>(If the <em>"Cross-Wilaya Redeployment"</em> Capability is in effect, FLN will Redeploy to get the Population Value plus one Guerrillas, but not more than three in each Base space across Algeria).</p>
+            <p>2. Spread Guerrillas as evenly as possible between Base spaces, within the pieces’ current Wilaya.</p><br>
+            <p>Now adjust Control to reflect the above moves.</p><br>
+            <button type="button" onclick="showAnswer(11);">Continue</button>
+          </div>
+
+          <div id="Question11" class="hide">
+            <p>Take one in three French pieces in the Casualties box and put them in the Out of Play box (round down, player’s choice).</p>
+            <p>Take one in three Guerrillas in the Casualties box and put them in the Out of Play box (round down, player’s choice).</p>
+            <p>Put all other Casualties into their respective Available boxes.</p><br>
+            <button type="button" onclick="showAnswer(12);">Continue</button>
+          </div>
+
+          <div id="Question12" class="hide">
+            <p>Move the France Track marker one box toward “A”.</p>
+            <p> Move the Border Zone Status marker one box towards “0”.</p><br>
+            <button type="button" onclick="showAnswer(13);">Continue</button>
+          </div>
+
+          <div id="Question13" class="hide">
+            <p>Remove a Terror marker from each space where there is at least one.</p>
+            <p>Flip all Guerrillas Underground.</p>
+            <p>Discard any Momentum cards that were in effect.</p>
+            <p>Set the cylinders on the Sequence of Play with the FLN as First Eligible.</p>
+            <p>Finally, play the next Event card.</p><br>
+            <p>Click the "Next Turn" button to continue with another FLN turn.</p><br>
+            <button type="button" onclick="window.location.href='fln_turn.html'";>Next Turn</button>        
+          </div>
+
+          <div id="Question14" class="hide">
+            <p>The game is over.</p>
+            <p>Calculate your score as follows: Total Support + Commitment – 35.</p>
+            <p>Calculate the FLN score as follows: Total Opposition + Bases – 30.</p>
+            <p>Whoever has the highest victory margin wins. Ties go to the FLN.</p><br>
+            <button type="button" onclick="window.location.href='../index.html'";>Game Over</button>        
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  
+  <footer>
+    <div class="footer">
+      <img src="images/footer.jpg" alt="Game designed by Brian Train, published by GMT Games">
+    </div>
+</footer>
+</body>
+
+</html>
