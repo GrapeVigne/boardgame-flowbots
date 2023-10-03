@@ -14,6 +14,7 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 2px;
   line-height: 125%;
+  min-height: 100vh;
 }
 
 /* styles for elements */
@@ -89,10 +90,9 @@ body {
 .rules-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 70%;
   padding: 2%;
-  background-color: rgb(200, 250, 160);
+  background-color: rgb(200, 250, 195);
   border: 2px solid rgb(50, 50, 50);
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 lightgray, 0 6px 20px 0 grey;
@@ -159,11 +159,14 @@ body {
   left: var(--hamburger-margin);
   z-index: 2;
   cursor: pointer;
+  background-color: rgb(170,160,150); /* change here */
+  padding: 15px 10px;
+  border-radius: 50%;
 }
 
 .hamburger-menu:has(input:checked) {
   --foreground: rgb(50,50,50);
-  --background: #333;
+  background-color: transparent;
 }
 
 .hamburger-menu:has(input:focus-visible)::before,

@@ -63,8 +63,8 @@
               <li>If there is a choice, remove enemy Bases, then French before Algerians, then Troops before Police.</li>
               <li>If there is a choice, reduce Commitment first, then Support, then the France Track (toward box “F” only), then Government Resources.</li>
               <li>When shifting Support/Opposition, first achieve the greatest combined shift in Support and Opposition. Then:
-                <p> - removing Terror markers only if also able to achieve a shift.</p>
-                <p> - otherwise affect shifts of Support first, then Opposition.</p></li>
+                <p> - remove Terror markers only if also able to achieve a shift.</p>
+                <p> - shift Support first, then Opposition.</p></li>
             </ul>
           </div>
           <figure class="image-box">
@@ -82,8 +82,8 @@
 
           <div id="Question2" class="hide">
             <ul>
-              <li>Check all 0 Population spaces with Algerian FLN Bases to ensure that they each have at least one <strong>Underground</strong> Guerrilla.</li>
-              <li>Now check all 1+ Population spaces with FLN Bases to ensure that they each have at least two <strong>Underground</strong> Guerrillas.</li>
+              <li>Check all Algerian 0 Population spaces with FLN Bases to ensure that they each have at least one <strong>Underground</strong> Guerrilla.</li>
+              <li>Now check all Algerian 1+ Population spaces with FLN Bases to ensure that they each have at least two <strong>Underground</strong> Guerrillas.</li>
             </ul>
             <p>Were these requirments met?</p><br>
             <button type="button" onclick="showAnswer(3);">Yes</button>
@@ -92,13 +92,13 @@
     
           <div id="Question3" class="hide">
             <p>Are the FLN able to play the current Event <u>and</u> it will reduce the Government victory margin?</p><br>
-            <button type="button" onclick="showAnswer(5);">Yes</button>
+            <button type="button" onclick="showAnswer(71);">Yes</button>
             <button type="button" onclick="showAnswer(6);">No</button>
           </div>
-    
+              
           <div id="Question4" class="hide">
-            <p>Were you already active on this Event card <u>and</u> you will be second Eligible on the next card?</p><br>
-            <button type="button" onclick="showAnswer(6);">Yes</button>
+            <p>Was the Government already active on this Event card <u>and</u> will be second Eligible on the next card?</p><br>
+            <button type="button" onclick="showAnswer(3);">Yes</button>
             <button type="button" onclick="showAnswer(8);">No</button>
           </div>
           
@@ -108,6 +108,76 @@
             <button type="button" onclick="showAnswer(12);">No</button>
           </div>
     
+          <div id="Question6" class="hide">
+            <p>Is this the last Campaign (only one Propaganda card remains)?</p><br>
+            <button type="button" onclick="showAnswer(19);">Yes</button>
+            <button type="button" onclick="showAnswer(18);">No</button>
+          </div>
+
+          <div id="Question7" class="hide">
+            <p>If the Event is played, will it:</p>
+            <ul>
+              <li>reduce Government victory margin or Resources?</li>
+              <li>shift the France Track towards "F"?</li>
+              <li>shift the Border Track towards "0"?</li>
+              <li>place at least one FLN Base?</li>
+            </ul><br>
+            <p>Were any of the conditions met?</p>
+            <button type="button" onclick="showAnswer(22);">Yes</button>
+            <button type="button" onclick="showAnswer(12);">No</button>
+          </div>
+              
+          <div id="Question8" class="hide">
+            <p>Would a Base be placed if the FLN Rally?</p><br>
+            <button type="button" onclick="showAnswer(13);">Yes</button>
+            <button type="button" onclick="showAnswer(21);">No</button>
+          </div>
+
+          <div id="Question9" class="hide">
+            <p>If the Event is played, will it:</p>
+            <ul>
+              <li>reduce Government victory margin or Resources?</li>
+              <li>shift the France Track towards "F"?</li>
+              <li>shift the Border Track towards "0"?</li>
+              <li>place at least one FLN Base?</li>
+              <li>or will its Capability be effective for either faction?</li>
+            </ul><br>
+            <p>Were any of the conditions met?</p>
+            <button type="button" onclick="showAnswer(22);">Yes</button>
+            <button type="button" onclick="showAnswer(12);">No</button>
+          </div>
+              
+          <div id="Question10" class="hide">
+            <!--March Operation-->
+            <p>Does the FLN have 8 or less remaining Resources?</p><br>
+            <button type="button" onclick="showAnswer(28);">Yes</button>
+            <button type="button" onclick="showAnswer(29);">No</button>
+          </div>
+              
+          <div id="Question11" class="hide">
+            <p>The FLN chooses to pass. Give them one resource and move their eligibility cylinder to "Pass".</p><br>
+            <button type="button" onclick="window.location.href='fln-turn.html'";>Next Turn</button>
+          </div>
+              
+          <div id="Question12" class="hide">
+            <!--Attack operation-->
+            <p>FLN will try to do Attack Operations as long as the following are met:</p>
+            <p>1. It will target as many spaces as possible until it runs out of targets or Resources.</p>
+            <p>2. It will never Activate the last Underground Guerrilla at an FLN base.</p>
+            <p>3. If FLN Resources run out during the Operation and there are still valid targets, click then "Extort" button.</p>
+            <p>4. The Attack, with Ambush if necessary, will be guaranteed to remove at least 2 French pieces.</p>
+            <p>5. Ambush can only be used if this is not a <strong>Limited Operation</strong>.</p>
+            <p>6. The FLN will Ambush the first two valid targets if possible.</p><br>
+            <button type="button" onclick="showAnswer(38);">Find Targets</button>
+          </div>
+              
+          <div id="Question13" class="hide">
+            <!--Rally Operation-->
+            <p>Does the FLN have 8 or less remaining Resources?</p><br>
+            <button type="button" onclick="showAnswer(41);">Yes</button>
+            <button type="button" onclick="showAnswer(55);">No</button>
+          </div>
+            
           <div id="Question14" class="hide">
             <p>Is the current Event marked with this FLN symbol?<img src="images/fln-mark.png" id="fln-mark"></p><br>
             <button type="button" onclick="showAnswer(15);">Yes</button>
@@ -125,19 +195,19 @@
             <button type="button" onclick="showAnswer(22);">Yes</button>
             <button type="button" onclick="showAnswer(12);">No</button>
           </div>
-    
-          <div id="Question22" class="hide">
-            <p>Play the Event, following any special instructions that may be found on the <em>"Events Marked for FLN"</em> section of the Player Aid.</p>
-            <p>Click the "Next Turn" button to proceed.</p><br>
-            <button type="button" onclick="window.location.href='fln-turn.html'";>Next Turn</button>        
+              
+          <div id="Question16" class="hide">
+            <p>Is the Event a Capability (of either faction)?</p><br>
+            <button type="button" onclick="showAnswer(9);">Yes</button>
+            <button type="button" onclick="showAnswer(17);">No</button>
           </div>
     
-          <div id="Question6" class="hide">
-            <p>Is this the last Campaign (only one Propaganda card remains)?</p><br>
-            <button type="button" onclick="showAnswer(19);">Yes</button>
-            <button type="button" onclick="showAnswer(18);">No</button>
+          <div id="Question17" class="hide">
+            <p>Roll a die. Did you roll a 5 or 6?</p><br>
+            <button type="button" onclick="showAnswer(12);">Yes</button>
+            <button type="button" onclick="showAnswer(7);">No</button>
           </div>
-    
+
           <div id="Question18" class="hide">
             <!--Terror Operations procedure NOT in last campaign-->
             <p>FLN will try to do Terror Operations as long as the following are met:</p>
@@ -149,10 +219,12 @@
             <p>In the case of a tie, choose a random space or click the "Choose Space" button.</p><br>
             <p>If there are no valid targets at all then click the "No Target" button below.</p>
             <p>If the FLN did at least one Terror operation, click the "Continue" button below.</p><br>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
-            <button class="special-button" type="button" onclick="window.open('map.html')";>Choose Space</button>
-            <button type="button" onclick="showAnswer(5);">No Target</button>
-            <button type="button" onclick="showAnswer(20);">Continue</button>
+            <div class="button-box-narrow">
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+              <button class="special-button" type="button" onclick="window.open('map.html')";>Choose Space</button>
+              <button type="button" onclick="showAnswer(5);">No Target</button>
+              <button type="button" onclick="showAnswer(20);">Continue</button>
+            </div>
           </div>
     
           <div id="Question19" class="hide">
@@ -166,34 +238,20 @@
             <p>2. Next, Neutral spaces that can be Pacified and don't already have a Terror marker.  As above, they will choose the highest Population first.</p><br>
             <p>If there are no valid targets at all then click the "No Target" button below.</p>
             <p>If the FLN did at least one Terror operation, click the "Continue" button below.</p><br>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
-            <button class="special-button" type="button" data-next="chooseSpace" onclick="window.open('map.html')";>Choose Space</button>
-            <button type="button" onclick="showAnswer(5);">No Target</button>
-            <button type="button" onclick="showAnswer(20);">Continue</button>
+            <div class="button-box-narrow">
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+              <button class="special-button" type="button" data-next="chooseSpace" onclick="window.open('map.html')";>Choose Space</button>
+              <button type="button" onclick="showAnswer(5);">No Target</button>
+              <button type="button" onclick="showAnswer(20);">Continue</button>
+            </div>
           </div>
     
           <div id="Question20" class="hide">
-            <p>Did the FLN Extort during this action?</p><br>
-            <button type="button" onclick="window.location.href='fln-turn.html'";>Yes - Next Turn</button>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
-          </div>
-    
-          <div id="Question16" class="hide">
-            <p>Is the Event a Capability (of either faction)?</p><br>
-            <button type="button" onclick="showAnswer(9);">Yes</button>
-            <button type="button" onclick="showAnswer(17);">No</button>
-          </div>
-    
-          <div id="Question17" class="hide">
-            <p>Roll a die. Did you roll a 5 or 6?</p><br>
-            <button type="button" onclick="showAnswer(12);">Yes</button>
-            <button type="button" onclick="showAnswer(9);">No</button>
-          </div>
-    
-          <div id="Question8" class="hide">
-            <p>Would a Base be placed if the FLN Rally?</p><br>
-            <button type="button" onclick="showAnswer(13);">Yes</button>
-            <button type="button" onclick="showAnswer(21);">No</button>
+            <p>Did the FLN try to Extort during this action?</p><br>
+            <div class="button-box-narrow">
+              <button type="button" onclick="window.location.href='fln-turn.html'";>Yes - Next Turn</button>
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+            </div>
           </div>
     
           <div id="Question21" class="hide">
@@ -205,7 +263,19 @@
             <button type="button" onclick="showAnswer(10);">Yes</button>
             <button type="button" onclick="showAnswer(13);">No</button>
           </div>
-    
+
+          <div id="Question22" class="hide">
+            <p>Play the Event, following any special instructions that may be found on the <em>"Events Marked for FLN"</em> section of the Player Aid.</p>
+            <p>Click the "Next Turn" button to proceed.</p><br>
+            <button type="button" onclick="window.location.href='fln-turn.html'";>Next Turn</button>        
+          </div>
+
+          <div id="Question23" class="hide">
+            <p>Play the Event.</p>
+            <p>When you're ready, click the "Next Turn" button to proceed.</p><br>
+            <button type="button" onclick="window.location.href='fln-turn.html'";>Next Turn</button>        
+          </div>
+          
           <div id="Question24" class="hide">
             <p>If played, would this Event reduce the Government's victory margin? For a Dual-Use Event look at the <strong>shaded</strong> text.</p><br>
             <button type="button" onclick="showAnswer(23);">Yes</button>
@@ -228,19 +298,6 @@
             <p>If played, would this Event place at least one FLN Base? For a Dual-Use Event look at the <strong>shaded</strong> text.</p><br>
             <button type="button" onclick="showAnswer(23);">Yes</button>
             <button type="button" onclick="showAnswer(12);">No</button>
-          </div>
-    
-          <div id="Question23" class="hide">
-            <p>Play the Event.</p>
-            <p>When you're ready, click the "Next Turn" button to proceed.</p><br>
-            <button type="button" onclick="window.location.href='fln-turn.html'";>Next Turn</button>        
-          </div>
-    
-          <div id="Question10" class="hide">
-            <!--March Operation-->
-            <p>Does the FLN have 8 or less remaining Resources?</p><br>
-            <button type="button" onclick="showAnswer(28);">Yes</button>
-            <button type="button" onclick="showAnswer(29);">No</button>
           </div>
     
           <div id="Question28" class="hide">
@@ -315,9 +372,11 @@
             <p>2. The in Mountains.</p>
             <p>3. Then along the cheapest route.</p>
             <p>4. Then where one or more Marching Guerrillas can remain Underground.</p><br>
-            <p>Once all Marches are done, the FLN may Subvert.  Click the "Subvert" button below.</p><br>
+            <p>Once all Marches are done, the FLN may Subvert.  Click the "Subvert" button below.</p>
+            <p>If the FLN failed to March at all this turn, click the "No Target" button.</p><br>
             <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
             <button class="special-button" type="button" onclick="window.open('subvert.html')";>Subvert</button>
+            <button type="button" onclick="showAnswer(56);">No Target</button>
           </div>
     
           <div id="Question34" class="hide">
@@ -358,20 +417,10 @@
             <p>2. The in Mountains.</p>
             <p>3. Then along the cheapest route.</p>
             <p>4. Then where one or more Marching Guerrillas can remain Underground.</p><br>
-            <p>Once all Marches are done, the FLN may Subvert.  Click the "Subvert" button below.</p><br>
+            <p>Once all Marches are done, the FLN may Subvert.  Click the "Subvert" button below.</p>
+            <p>If the FLN failed to March at all this turn, click the "No Target" button.</p><br>
             <button class="special-button" type="button" onclick="window.open('subvert.html')";>Subvert</button>
-          </div>
-    
-          <div id="Question12" class="hide">
-            <!--Attack operation-->
-            <p>FLN will try to do Attack Operations as long as the following are met:</p>
-            <p>1. It will target as many spaces as possible until it runs out of targets or Resources.</p>
-            <p>2. It will never Activate the last Underground Guerrilla at an FLN base.</p>
-            <p>3. If FLN Resources run out during the Operation and there are still valid targets, click then "Extort" button.</p>
-            <p>4. The Attack, with Ambush if necessary, will be guaranteed to remove at least 2 French pieces.</p>
-            <p>5. Ambush can only be used if this is not a <strong>Limited Operation</strong>.</p>
-            <p>6. The FLN will Ambush the first two valid targets if possible.</p><br>
-            <button type="button" onclick="showAnswer(38);">Find Targets</button>
+            <button type="button" onclick="showAnswer(56);">No Target</button>
           </div>
           
           <div id="Question38" class="hide">
@@ -381,18 +430,20 @@
             <p>1. Government Bases.</p>
             <p>2. French Troops.</p>
             <p>3. French Police.</p>
-            <p>4. The most pieces.</p>
+            <p>4. The most pieces.</p><br>
             <p>If you need to choose a random space click the "Choose Space" button.</p>
-            <p>If FLN resources run out during the operation and there are still valid targets, click then "Extort" button, unless they have already used Ambush.</p><br>
-            <div class="extra-buttons">  
-              <button class="special-button" type="button" data-next="chooseSpace" onclick="window.open('map.html')";>Choose Space</button>
-            </div>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+            <p>If FLN resources run out during the operation and there are still valid targets, click then "Extort" button, unless they have already used Ambush.</p>
             <p>If there are no targets, click the "No Target" button below.</p><br>
-            <button type="button" onclick="showAnswer(8);">No Target</button>
-            <p>After exhausting all of the above targets, does the FLN still have resources and guerrillas available to Attack?</p>
-            <button type="button" onclick="showAnswer(39);">Yes</button>
-            <button type="button" onclick="window.location.href='fln-turn.html'";>No - Next Turn</button>
+            <div class="button-box-narrow">  
+              <button class="special-button" type="button" data-next="chooseSpace" onclick="window.open('map.html')";>Choose Space</button>
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+              <button type="button" onclick="showAnswer(8);">No Target</button>
+            </div><br>
+            <p>After exhausting all of the above targets, does the FLN still have resources and guerrillas available to Attack?</p><br>
+            <div class="button-box-narrow">
+              <button type="button" onclick="showAnswer(39);">Yes</button>
+              <button type="button" onclick="window.location.href='fln-turn.html'";>No - Next Turn</button>
+            </div>
           </div>
     
           <div id="Question39" class="hide">
@@ -401,31 +452,26 @@
             <p>1. Government Bases.</p>
             <p>2. French Troops.</p>
             <p>3. French Police.</p>
-            <p>4. The most pieces.</p>
+            <p>4. The most pieces.</p><br>
             <p>If you need to choose a random space click the "Choose Space" button.</p>
-            <p>If FLN resources run out during the operation and there are still valid targets, click then "Extort" button, unless they have already used Ambush.</p><br>
-            <div class="extra-buttons">
+            <p>If FLN resources run out during the operation and there are still valid targets, click then "Extort" button, unless they have already used Ambush.</p>
+            <p>If there are no targets, click the "No Target" button below to move to the next turn.</p><br>
+            <div class="button-box-narrow">
               <button class="special-button" type="button" data-next="chooseSpace" onclick="window.open('map.html')";>Choose Space</button>
               <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+              <button type="button" onclick="window.location.href='fln-turn.html'";>No Target</button>
+            </div><br>
+            <p>If the FLN did at least one Attack operation, and has now finished with valid targets, click the "Extort" button, or "Next Turn" if it cannot Extort.</p><br>
+            <div class="button-box-narrow">
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Continue</button>
+              <button type="button" onclick="window.location.href='fln-turn.html'";>Next Turn</button>
             </div>
-            <p>If there are no targets, click the "No Target" button below to move to the next turn.</p><br>
-            <p>If the FLN did at least one Attack operation, and has now finished with valid targets, click the "Continue" button below.</p><br>
-            <button class="special-button" type="button" data-next="chooseSpace" onclick="window.open('map.html')";>Choose Space</button>
-            <button type="button" onclick="window.location.href='fln-turn.html'";>No Target</button>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Continue</button>
           </div>
     
           <div id="Question40" class="hide">
             <p>Did the FLN Ambush as part of the Attacks?</p><br>
             <button type="button" onclick="window.location.href='fln-turn.html'";>Yes - Next Turn</button>
             <button class="special-button" type="button" onclick="window.open('extort.html')";>No</button>
-          </div>
-    
-          <div id="Question13" class="hide">
-            <!--Rally Operation TO BE COMPLETED-->
-            <p>Does the FLN have 8 or less remaining Resources?</p><br>
-            <button type="button" onclick="showAnswer(41);">Yes</button>
-            <button type="button" onclick="showAnswer(55);">No</button>
           </div>
     
           <div id="Question41" class="hide">
@@ -447,34 +493,17 @@
             <p>Is this a Limited Operation?</p><br>
             <button type="button" onclick="showAnswer(53);">Yes</button>
             <button type="button" onclick="showAnswer(54);">No</button>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
-          </div>
-    
-          <div id="Question53" class="hide">
-            <p>In all spaces with 3+ Guerrillas and room for a Base, replace two Guerrillas with a Base.</p>
-            <p>Replace Active Guerrillas if possible.</p><br>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
-            <p>Is the FLN still able to Rally?</p><br>
-            <button type="button" onclick="showAnswer(43);">Yes</button>
-            <button type="button" onclick="showAnswer(60);">No</button>
-          </div>
-    
-          <div id="Question54" class="hide">
-            <p>In all spaces with 3+ Guerrillas <strong>and</strong> no Government Cubes <strong>and</strong> room for a Base, replace two Guerrillas with a Base.</p>
-            <p>Replace Active Guerrillas if possible.</p><br>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
-            <p>Is the FLN still able to Rally?</p><br>
-            <button type="button" onclick="showAnswer(43);">Yes</button>
-            <button type="button" onclick="showAnswer(60);">No</button>
           </div>
     
           <div id="Question43" class="hide">
             <p>In all spaces with four or more Guerrillas and room for a Base, replace two Guerrillas with a Base.</p>
             <p>Replace Active Guerrillas if possible.</p><br>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
             <p>Is the FLN still able to Rally?</p><br>
-            <button type="button" onclick="showAnswer(44);">Yes</button>
-            <button type="button" onclick="showAnswer(60);">No</button>
+            <div class="button-box-narrow">
+              <button type="button" onclick="showAnswer(44);">Yes</button>
+              <button type="button" onclick="showAnswer(60);">No</button>
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+            </div>
           </div>
     
           <div id="Question44" class="hide">
@@ -487,27 +516,33 @@
             <p>2. Then in spaces with Cubes.</p>
             <p>3. Then at 1+ Population.</p>
             <p>4. Then at the least Underground Guerrillas.</p><br>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
             <p>Is the FLN still able to Rally?</p><br>
-            <button type="button" onclick="showAnswer(45);">Yes</button>
-            <button type="button" onclick="showAnswer(60);">No</button>
+            <div class="button-box-narrow">
+              <button type="button" onclick="showAnswer(45);">Yes</button>
+              <button type="button" onclick="showAnswer(60);">No</button>
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+            </div>
           </div>
     
           <div id="Question45" class="hide">
             <p>Shift the France Track towards "F" if possible.</p><br>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
             <p>Is the FLN still able to Rally?</p><br>
-            <button type="button" onclick="showAnswer(46);">Yes</button>
-            <button type="button" onclick="showAnswer(60);">No</button>
+            <div class="button-box-narrow">
+              <button type="button" onclick="showAnswer(46);">Yes</button>
+              <button type="button" onclick="showAnswer(60);">No</button>
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+            </div>
           </div>
     
           <div id="Question46" class="hide">
             <p>In all non-City spaces at Support <strong>and</strong> that have no Underground Guerrillas, place Guerrillas.</p>
             <p>Place at highest Population spaces first.</p><br>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
             <p>Is the FLN still able to Rally?</p><br>
-            <button type="button" onclick="showAnswer(47);">Yes</button>
-            <button type="button" onclick="showAnswer(60);">No</button>
+            <div class="button-box-narrow">
+              <button type="button" onclick="showAnswer(47);">Yes</button>
+              <button type="button" onclick="showAnswer(60);">No</button>
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+            </div>
           </div>
     
           <div id="Question47" class="hide">
@@ -515,10 +550,12 @@
             <p>These spaces must have FLN Control or a Base.</p>
             <p>Set aside Resources to Agitate in these spaces at the end of the Rally.</p>
             <p>The FLN will also now Rally in these spaces if it has not yet done so.</p><br>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
             <p>Is the FLN still able to Rally?</p><br>
-            <button type="button" onclick="showAnswer(48);">Yes</button>
-            <button type="button" onclick="showAnswer(60);">No</button>
+            <div class="button-box-narrow">
+              <button type="button" onclick="showAnswer(48);">Yes</button>
+              <button type="button" onclick="showAnswer(60);">No</button>
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+            </div>
           </div>
     
           <div id="Question48" class="hide">
@@ -528,10 +565,12 @@
             <p>2. To remove Government Control in a Neutral space.</p>
             <p>3. In Wilayas with Cities.</p>
             <p>4. Where there is the least Terror.</p><br>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
             <p>Is the FLN still able to Rally?</p><br>
-            <button type="button" onclick="showAnswer(49);">Yes</button>
-            <button type="button" onclick="showAnswer(60);">No</button>
+            <div class="button-box-narrow">
+              <button type="button" onclick="showAnswer(49);">Yes</button>
+              <button type="button" onclick="showAnswer(60);">No</button>
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+            </div>
           </div>
     
           <div id="Question49" class="hide">
@@ -540,10 +579,12 @@
             <p>1. In Algeria.</p>
             <p>2. The most Guerrillas.</p>
             <p>3. With no Government Cubes.</p><br>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
             <p>Is the FLN still able to Rally?</p><br>
-            <button type="button" onclick="showAnswer(50);">Yes</button>
-            <button type="button" onclick="showAnswer(60);">No</button>
+            <div class="button-box-narrow">
+              <button type="button" onclick="showAnswer(50);">Yes</button>
+              <button type="button" onclick="showAnswer(60);">No</button>
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+            </div>
           </div>
     
           <div id="Question50" class="hide">
@@ -562,10 +603,34 @@
             <p>Agitate in <strong>one</strong> space with FLN Control or a Base.</p>
             <p>Agitate for the greatest possible shift.</p>
             <p>The FLN will also now Rally in this spaces if it has not yet done so.</p><br>
-            <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
             <p>If there were no possible spaces to Rally, click the "No Target" button. Otherwise click "Continue".</p><br>
-            <button type="button" onclick="showAnswer(10);">No Target</button>
-            <button class="special-button" type="button" onclick="window.open('subvert.html')";>Continue</button>
+            <div class="button-box-narrow">
+              <button type="button" onclick="showAnswer(73);">No Target</button>
+              <button class="special-button" type="button" onclick="window.open('subvert.html')";>Continue</button>
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+            </div>
+          </div>
+
+          <div id="Question53" class="hide">
+            <p>In all spaces with 3+ Guerrillas and room for a Base, replace two Guerrillas with a Base.</p>
+            <p>Replace Active Guerrillas if possible.</p><br>
+            <p>Is the FLN still able to Rally?</p><br>
+            <div class="button-box-narrow">
+              <button type="button" onclick="showAnswer(43);">Yes</button>
+              <button type="button" onclick="showAnswer(60);">No</button>
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+            </div>
+          </div>
+    
+          <div id="Question54" class="hide">
+            <p>In all spaces with 3+ Guerrillas <strong>and</strong> no Government Cubes <strong>and</strong> room for a Base, replace two Guerrillas with a Base.</p>
+            <p>Replace Active Guerrillas if possible.</p><br>
+            <p>Is the FLN still able to Rally?</p><br>
+            <div class="button-box-narrow">
+              <button type="button" onclick="showAnswer(43);">Yes</button>
+              <button type="button" onclick="showAnswer(60);">No</button>
+              <button class="special-button" type="button" onclick="window.open('extort.html')";>Extort</button>
+            </div>
           </div>
     
           <div id="Question55" class="hide">
@@ -576,19 +641,11 @@
             </ul><br>            
             <button type="button" onclick="showAnswer(59);">Continue</button>
           </div>
-    
-          <div id="Question59" class="hide">
-            <p>Is this a Limited Operation?</p><br>
-            <button type="button" onclick="showAnswer(58);">Yes</button>
-            <button type="button" onclick="showAnswer(57);">No</button>
-          </div>
-    
-          <div id="Question58" class="hide">
-            <p>In all spaces with 3+ Guerrillas and room for a Base, replace two Guerrillas with a Base.</p>
-            <p>Replace Active Guerrillas if possible.</p><br>
-            <p>Is the FLN still able to Rally?</p><br>
-            <button type="button" onclick="showAnswer(61);">Yes</button>
-            <button type="button" onclick="showAnswer(60);">No</button>
+
+          <div id="Question56" class="hide">
+            <p>Did the FLN already try to Rally this turn?</p><br>
+            <button type="button" onclick="showAnswer(11);">Yes</button>
+            <button type="button" onclick="showAnswer(13);">No</button>
           </div>
     
           <div id="Question57" class="hide">
@@ -597,6 +654,26 @@
             <p>Is the FLN still able to Rally?</p><br>
             <button type="button" onclick="showAnswer(61);">Yes</button>
             <button type="button" onclick="showAnswer(60);">No</button>
+          </div>
+
+          <div id="Question58" class="hide">
+            <p>In all spaces with 3+ Guerrillas and room for a Base, replace two Guerrillas with a Base.</p>
+            <p>Replace Active Guerrillas if possible.</p><br>
+            <p>Is the FLN still able to Rally?</p><br>
+            <button type="button" onclick="showAnswer(61);">Yes</button>
+            <button type="button" onclick="showAnswer(60);">No</button>
+          </div>
+
+          <div id="Question59" class="hide">
+            <p>Is this a Limited Operation?</p><br>
+            <button type="button" onclick="showAnswer(58);">Yes</button>
+            <button type="button" onclick="showAnswer(57);">No</button>
+          </div>
+              
+          <div id="Question60" class="hide">
+            <p>Did the FLN Rally at least once this turn?</p><br>
+            <button class="special-button" type="button" onclick="window.open('subvert.html')";>Yes</button>
+            <button type="button" onclick="showAnswer(73);">No</button>
           </div>
     
           <div id="Question61" class="hide">
@@ -669,13 +746,7 @@
             <button type="button" onclick="showAnswer(70);">Yes</button>
             <button type="button" onclick="showAnswer(60);">No</button>
           </div>
-    
-          <div id="Question70" class="hide">
-            <p>Did the FLN already reserve Resources for Agitation this turn?</p><br>
-            <button type="button" onclick="showAnswer(68);">Yes</button>
-            <button type="button" onclick="showAnswer(69);">No</button>
-          </div>
-    
+              
           <div id="Question68" class="hide">
             <p>Agitate in spaces previously selected.</p><br>
             <button class="special-button" type="button" onclick="window.open('subvert.html')";>Continue</button>
@@ -686,19 +757,37 @@
             <p>Agitate for the greatest possible shift.</p>
             <p>The FLN will also now Rally in this spaces if it has not yet done so.</p><br>
             <p>If there were no possible spaces to Rally, click the "No Target" button. Otherwise click "Continue".</p><br>
-            <button type="button" onclick="showAnswer(10);">No Target</button>
+            <button type="button" onclick="showAnswer(73);">No Target</button>
             <button class="special-button" type="button" onclick="window.open('subvert.html')";>Continue</button>
           </div>
     
-          <div id="Question60" class="hide">
-            <p>Did the FLN Rally at least once this turn?</p><br>
-            <button class="special-button" type="button" onclick="window.open('subvert.html')";>Yes</button>
-            <button type="button" onclick="showAnswer(10);">No</button>
+          <div id="Question70" class="hide">
+            <p>Did the FLN already reserve Resources for Agitation this turn?</p><br>
+            <button type="button" onclick="showAnswer(68);">Yes</button>
+            <button type="button" onclick="showAnswer(69);">No</button>
           </div>
-    
-          <div id="Question11" class="hide">
-            <p>The FLN chooses to pass. Give them one resource and move their eligibility cylinder to "Pass".</p><br>
-            <button type="button" onclick="window.location.href='fln-turn.html'";>Next Turn</button>
+          
+          <div id="Question71" class="hide">
+            <p>The FLN need to choose between Terror Operations and the Event.</p><br>
+            <p>First calculate the maximum possible Support decrease if this Terror Operation is executed.</p>
+            <p>Check all eligible spaces, starting with the highest Population spaces. Continue checking as long as the following are met:</p>
+            <p>1. The FLN target as many spaces as possible until it runs out of targets or Resources.</p>
+            <p>2. It will never Activate the last Underground Guerrilla at an FLN base.</p>
+            <p>3. If FLN Resources run out during the Operation and there are still valid targets, if possible it will Extort to gain more, and then continue with Terror.</p><br>
+            <button type="button" onclick="showAnswer(72);">Continue</button>
+          </div>
+
+          <div id="Question72" class="hide">
+            <p>Now check the total Government victory margin decrease if the Event was played.</p>
+            <p>Would the Government lose more from the Terror Operation than from the Event?</p><br>
+            <button type="button" onclick="showAnswer(6);">Yes</button>
+            <button type="button" onclick="showAnswer(5);">No</button>
+          </div>
+
+          <div id="Question73" class="hide">
+            <p>Did the FLN already try to March this turn?</p><br>
+            <button type="button" onclick="showAnswer(11);">Yes</button>
+            <button type="button" onclick="showAnswer(10);">No</button>
           </div>
         </div>
       </section>

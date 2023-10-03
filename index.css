@@ -24,6 +24,7 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 2px;
   line-height: 125%;
+  min-height: 100vh;
 }
 
 /* styles for elements */
@@ -201,10 +202,14 @@ footer a:hover {
   left: var(--hamburger-margin);
   z-index: 2;
   cursor: pointer;
+  background-color: lightgray;
+  padding: 15px 10px;
+  border-radius: 50%;
 }
 
 .hamburger-menu:has(input:checked) {
   --foreground: rgb(50,50,50);
+  background-color: transparent;
 }
 
 .hamburger-menu:has(input:focus-visible)::before,
@@ -219,7 +224,7 @@ footer a:hover {
   content: "";
   width: var(--bar-width);
   height: var(--bar-height);
-  background-color: var(--foreground);
+  background-color: rgb(50,50,50);
   border-radius: 9999px;
   transform-origin: left center;
   transition: opacity var(--animation-timing), width var(--animation-timing),
@@ -234,6 +239,7 @@ footer a:hover {
   outline: none;
   pointer-events: none;
 }
+
 
 .hamburger-menu:has(input:checked)::before {
   rotate: 45deg;
