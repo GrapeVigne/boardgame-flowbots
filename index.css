@@ -336,3 +336,8 @@ li:hover {
 	float: right;
 	margin-right: 0.313rem;
 }
+
+
+@media screen and (max-width 1008px) {
+  
+}
