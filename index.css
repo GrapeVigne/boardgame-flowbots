@@ -1,7 +1,6 @@
 /* styles for whole page */ 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -22,7 +21,7 @@ html {
 /* styles for body */
 body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 2px;
+  padding: 0.2%;
   line-height: 125%;
   min-height: 100vh;
 }
@@ -55,11 +54,11 @@ h2 {
 }
 
 .banner-top {
-  height: 180px;
+  height: 95%;
 }
 
 .page-title h1 {
- font-size: 4rem;
+ font-size: 400%;
  text-align: end;
  color: lightgray;
 }
@@ -78,10 +77,10 @@ main {
   flex-direction: column;
   align-items: center;
   width: 85%;
-  max-width: 1500px;
+  max-width: 1920px;
   height: auto;
   border: 2px solid black;
-  border-radius: 20px;
+  border-radius: 2%;
   margin: 2%;
 }
 
@@ -116,9 +115,9 @@ main {
 	flex-direction: column;
 	align-items: center;
 	justify-content: start;
-	padding: 5px;
-	margin: 20px;
-	width: 130px;
+	padding: 0.5%;
+	margin: 2%;
+	width: 13%;
 	height: auto;
 }
 
@@ -127,10 +126,10 @@ main {
 	flex-direction: column;
 	align-items: center;
 	justify-content: start;
-	padding: 5px;
-	margin: 20px;
+	padding: 0.5%;
+	margin: 2%;
 	width: auto;
-	height: 130px;
+	height: 13%;
 }
 
 .game-box:hover,
@@ -139,27 +138,18 @@ main {
 }
 
 .box-cover {
-	height: 160px;
-	width: 120px;
-	border: solid 1px;
-	border-radius: 4px;
-}
-
-.box-cover-wide {
-	width: auto;
-	height: 120px;
+	height: auto;
+	width: 100%;
 	border: solid 1px black;
-	border-radius: 4px;
+	border-radius: 3%;
 }
 
-.game-box p,
-.game-box-wide {
+.game-box p {
   font-size: 0.75rem;
   text-align: center;
 }
 
-.game-box a,
-.game-box-wide a {
+.game-box a {
   text-decoration: none;
   color: black;
 }
@@ -338,6 +328,6 @@ li:hover {
 }
 
 
-@media screen and (max-width 1008px) {
+/*@media screen and (max-width 1245px) {
   
-}
+}*/
