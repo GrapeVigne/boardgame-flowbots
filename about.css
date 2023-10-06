@@ -165,7 +165,7 @@ footer a:hover {
    }
 }
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 1025px) {
   .page-title h1 {
     font-size: 250%;
    }
