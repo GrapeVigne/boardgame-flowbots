@@ -328,7 +328,6 @@ li:hover {
 	margin-right: 0.313rem;
 }
 
-
 /* responsive */
 @media screen and (max-width: 1185px) {
   .page-header {
@@ -341,6 +340,10 @@ li:hover {
 }
 
 @media screen and (max-width: 825px) {
+  .body {
+    padding: 0;
+  }
+
   .page-header {
     height: 120px;
   }
@@ -351,12 +354,19 @@ li:hover {
 }
 
 @media screen and (max-width: 420px) {
+  .body {
+    padding: 0;
+  }
+
   .page-header {
     height: 100px;
-    min-width: auto;
   }
 
   .page-title h1 {
-    font-size: 100%;
+    font-size: 150%;
+   }
+
+   .banner-top {
+    display: none;
    }
 }

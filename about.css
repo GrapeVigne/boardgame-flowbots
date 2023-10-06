@@ -1,7 +1,6 @@
 /* styles for whole page */ 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -12,7 +11,7 @@ html {
 /* styles for body */
 body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 2px;
+  padding: 0.2%;
   line-height: 125%;
   min-height: 100vh;
 }
@@ -23,13 +22,16 @@ body {
 /* styles for header */
 .page-header {
   background-image: url(images/wallpaper-dark.jpg);
-  min-height: 200px;
+  height: 200px;
+  width: 100%;
   display: flex;
+  justify-content: space-around;
 }
 
 .page-title {
   width: 80%;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -41,12 +43,12 @@ body {
 }
 
 .banner-top {
-  height: 180px;
+  height: 90%;
 }
 
 .page-title h1 {
- font-size: 4rem;
- text-align: start;
+ font-size: 400%;
+ text-align: center;
  color: lightgray;
 }
 
@@ -73,6 +75,10 @@ main {
   flex-direction: column;
   height: auto;
   padding: 0 5% 2% 5%;
+}
+
+.section-heading {
+  margin-bottom: 1%;
 }
 
 .content-box-column {
@@ -145,4 +151,85 @@ footer a:hover {
   color: lightgray;
   font-size: 0.9rem;
 	color: #2b72fb;
+}
+
+/* responsive */
+@media screen and (max-width: 1185px) {
+  .page-header {
+    height: 150px;
+  }
+
+  .page-title h1 {
+    font-size: 300%;
+   }
+}
+
+@media screen and (max-width: 825px) {
+  .body {
+    padding: 0;
+  }
+
+  .page-header {
+    height: 120px;
+  }
+
+  .page-title {
+    align-items: center;
+  }
+
+  .page-title h1 {
+    font-size: 200%;
+   }
+
+   .content-box {
+    flex-direction: column;
+  }
+
+  .text-box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .body {
+    padding: 0;
+  }
+
+  .page-header {
+    height: 100px;
+  }
+
+  .page-title {
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-image {
+    width: 0%;
+  }
+
+  .page-title h1 {
+    font-size: 150%;
+   }
+
+   .banner-top {
+    display: none;
+   }
+
+   .content-box {
+    flex-direction: column;
+  }
+
+  .text-box {
+    width: 100%;
+  }
+
+  .content-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .big-text-box {
+    margin: 0;
+  }
 }
