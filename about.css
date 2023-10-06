@@ -154,17 +154,7 @@ footer a:hover {
 	color: #2b72fb;
 }
 
-/* responsive */
-@media screen and (max-width: 1185px) {
-  .page-header {
-    height: 150px;
-  }
-
-  .page-title h1 {
-    font-size: 300%;
-   }
-}
-
+/* responsive - test ipad pro, ipad and iphone X, both portrait and landscape*/
 @media screen and (max-width: 1025px) {
   .page-title h1 {
     font-size: 250%;

@@ -30,7 +30,8 @@ h2 {
 /* styles for header */
 .page-header {
   background-image: url(images/header.jpg);
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 180px;
   display: flex;
   border-bottom: 2px solid rgb(50, 50, 50);
@@ -325,4 +326,63 @@ button:hover {
 .clicked  {
 	background-color: rgb(150, 150, 150);
 	color: darkgray;
+}
+
+/* responsive - test ipad pro, ipad and iphone X, both portrait and landscape*/
+@media screen and (max-width: 1025px) {
+  .section-content {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .page-header {
+    background-size: auto 100%;
+    background-position: center;
+  }
+  
+  .section-content {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .page-header {
+    height: 100px;
+    background-size: 140% 100%;
+  }
+
+  h1 {
+    line-height: 1.6rem;
+  }
+  
+  .section-content {
+    width: 95%;
+  }
+
+    .content-box {
+    flex-direction: column;
+  }
+
+  .lead-box {
+    width: 100%;
+    margin-bottom: 1.5%;
+  }
+
+  .results-box {
+    flex-direction: column;
+  }
+
+  .result-button {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    height: 100px;
+  }
+
+  .footer img {
+    max-height: 100%;
+  }
 }
