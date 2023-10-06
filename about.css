@@ -165,6 +165,12 @@ footer a:hover {
    }
 }
 
+@media screen and (max-width: 925px) {
+  .page-title h1 {
+    font-size: 250%;
+   }
+}
+
 @media screen and (max-width: 825px) {
   .body {
     padding: 0;
